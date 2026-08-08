@@ -1,0 +1,17 @@
+{
+  "case_id": "C06",
+  "case_type": "ground_penetration",
+  "contact_policy": "feet_only",
+  "entities": "[\"left_ankle_roll_link\",\"left_hip_yaw_link\",\"left_knee_link\"]",
+  "event_duration_s": 2.2333333333333334,
+  "event_end_frame": 5643,
+  "event_start_frame": 5577,
+  "max_severity": 0.2107266867511459,
+  "motion_category": "standing_walking",
+  "motion_name": "walk2_subject3",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/walk2_subject3.pkl",
+  "pose_frames": "[5547,5578,5610,5642,5673]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 5673,
+  "window_start_frame": 5547
+}

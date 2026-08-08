@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "geometry_audit_summary.json",
+      "sha256": "b01d085a1c21b47b681f100267d58c2a31c4921cf195016e67792847d907f433",
+      "size_bytes": 2528
+    },
+    {
+      "path": "paired_geometry_metrics.csv",
+      "sha256": "10eef8278f8faa26b0e7364666b2623bb60a70dcf06fde166aaa98c5a8d3dcb2",
+      "size_bytes": 7349
+    }
+  ],
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_geometry_audit.py",
+    "sha256": "b80ee2e9e470b77225441fe48bc7b3edcb3064ecebc37325ac5cae51397c6a79"
+  }
+}

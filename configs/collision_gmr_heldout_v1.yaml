@@ -1,0 +1,89 @@
+schema_version: 1
+
+paths:
+  gmr_root: /root/gpufree-data/GMR
+  gmr_motion_retarget: /root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py
+  gmr_lafan1_loader: /root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py
+  gmr_ik_config: /root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json
+  original_robot_xml: /root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml
+  # The runner's historical key is retained; this points to the preregistered I0 held-out catalog.
+  development_catalog: /root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_v1/heldout_a1_quality_catalog.csv
+  quality_config: /root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml
+  derived_robot_xml: /root/gpufree-data/gmr_improved/assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml
+  collision_pairs_csv: /root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_pairs.csv
+  collision_model_audit: /root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_model_audit.json
+  temporal_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py
+  temporal_experiment_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py
+  temporal_v2_config: /root/gpufree-data/gmr_improved/configs/temporal_gmr_v2.yaml
+  collision_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision.py
+  collision_model_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision_model.py
+  collision_experiment_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision_experiment.py
+  collision_cli_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision_cli.py
+
+frozen_inputs:
+  gmr_commit: bb1bbe40774794fceb2a7c579a3464a28e68c844
+  gmr_motion_retarget_sha256: 3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663
+  gmr_lafan1_loader_sha256: 3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c
+  gmr_ik_config_sha256: cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320
+  original_robot_xml_sha256: 85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8
+  development_catalog_sha256: dd2891e0e07ce1108c4ab724c687ca528cd085f219f5b6f1bf906841bd570024
+  derived_robot_xml_sha256: 02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff
+  collision_pairs_csv_sha256: bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff
+  collision_model_audit_sha256: ac48303565d8e373dcbc31a1fc9001ed8f4f749e3e624db22bf049b77c87df27
+  temporal_implementation_sha256: c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0
+  temporal_experiment_implementation_sha256: bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746
+  temporal_v2_config_sha256: 4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5
+  collision_implementation_sha256: 04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40
+  collision_model_implementation_sha256: 9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e
+  collision_experiment_implementation_sha256: 8500e264b8ec662c6e8187bc08407dbe3859c78b97cc66a516b56f9395e288b9
+  collision_cli_implementation_sha256: 1dda38c82fa50fb564122a7bd4bc8a4a9bac38c1f552d763f5c1f253779dcd17
+  motion_count: 15
+  total_frames: 91627
+
+heldout_reference:
+  temporal_a1_quality_summary: /root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_quality_v1/quality_summary.csv
+  temporal_a1_quality_summary_sha256: 4cc1db17f469ac2af9fc18234010aeed5f10b2d84edc290ba29eddb9735dc3a1
+  temporal_a1_quality_manifest: /root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_quality_v1/run_manifest.json
+  temporal_a1_quality_manifest_sha256: 1e1819ebe127c3bf47733ac010b7158ca90b17628cd3ca49866175ef49227e69
+  i0_heldout_core_audit: /root/gpufree-data/gmr_improved/data/temporal_gmr_heldout_core_audit.json
+  i0_heldout_core_audit_sha256: 062f984c2899987cc9ac580cb55b92336c0852a0ce86bde8c58cf4dc814693a8
+
+gmr:
+  solver: daqp
+  damping: 0.5
+
+temporal_gmr:
+  output_fps: 30.0
+  max_joint_velocity_rad_s: 9.41535318280861
+  previous_posture_cost: 1.0
+  soft_limit_cost: 10.0
+  soft_limit_margin_fraction: 0.03
+  soft_limit_min_margin_rad: 0.0
+  trust_region_tolerance_rad: 0.0000001
+  enabled: true
+
+collision_gmr:
+  minimum_distance_m: 0.005
+  detection_distance_m: 0.020
+  gain: 0.85
+  bound_relaxation: 0.0
+  broadphase: true
+  expected_pair_count: 362
+  minimum_tree_distance: 3
+  hand_patterns:
+    - left_wrist
+    - right_wrist
+    - left_rubber_hand
+    - right_rubber_hand
+  enabled: true
+
+acceptance:
+  primary_metrics:
+    - self_collision_nonhand_frame_rate
+    - self_collision_nonhand_event_count
+  compare_against: temporal_gmr_v2_heldout_a1
+  require_strict_primary_improvement: true
+  no_new_hard_fail: true
+  maximum_overall_fidelity_pass_rate_decline_relative_to_a1: 0.02
+  preserve_zero_joint_jump_and_velocity_violation: true
+  ignore_uncalibrated_quality_score: true

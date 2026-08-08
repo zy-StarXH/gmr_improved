@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "CONTACT_GMR_COMPARISON_REPORT.md",
+      "sha256": "9d141b5163a071cc737e1af29ea780c29a72dd2911b450cdc1a1b48a9b0437d8",
+      "size_bytes": 914
+    },
+    {
+      "path": "comparison_summary.json",
+      "sha256": "579875be9a8ad805acf0bfae6b10f4d65a4ef00d9f8dd80fce402f5015e249b8",
+      "size_bytes": 20496
+    },
+    {
+      "path": "paired_motion_metrics.csv",
+      "sha256": "97e813355b9ca88011c121c9203925e5ec13707698cdf9c0077e43273cdbca3e",
+      "size_bytes": 29478
+    },
+    {
+      "path": "policy_metrics.csv",
+      "sha256": "5e40bd9e63b24e2a8438e642b673e65aeaceb17c008297c44e50a4f8af595cd7",
+      "size_bytes": 11190
+    }
+  ],
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_compare.py",
+    "sha256": "f0ebc6340e35cd41b0e4c385db7dfa88335d1b649dd1d25d40a9cdd360c2d92a"
+  }
+}

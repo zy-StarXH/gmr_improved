@@ -1,0 +1,5 @@
+case_id,motion_name,frame,joint,previous_rad,current_rad,delta_rad,next_rad,next_delta_rad,max_velocity_rad_s,interpretation_boundary
+C08,fight1_subject3,2538,left_shoulder_roll_joint,1.8786520399656923,-0.5999999209198904,-2.478651960885583,-0.5971198065028138,0.0028801144170765847,74.35955882656748,output discontinuity confirmed; solver cause not yet proven
+C09,pushAndFall1_subject4,4429,right_wrist_pitch_joint,-0.7403482997192129,1.4102561394429294,2.150604439162142,1.4295436387827003,0.01928749933977092,64.51813317486426,output discontinuity confirmed; solver cause not yet proven
+C10,dance2_subject2,4943,left_wrist_roll_joint,-0.6777668497889288,1.1980467164757322,1.875813566264661,1.1322073471069085,-0.06583936936882373,56.27440698793983,output discontinuity confirmed; solver cause not yet proven
+

@@ -1,0 +1,17 @@
+{
+  "case_id": "C08",
+  "case_type": "joint_jump",
+  "contact_policy": "feet_only",
+  "entities": "[\"left_shoulder_roll_joint\"]",
+  "event_duration_s": 0.0333333333333333,
+  "event_end_frame": 2538,
+  "event_start_frame": 2538,
+  "max_severity": 2.478651960885583,
+  "motion_category": "complex_dynamic",
+  "motion_name": "fight1_subject3",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/fight1_subject3.pkl",
+  "pose_frames": "[2508,2523,2538,2553,2568]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 2568,
+  "window_start_frame": 2508
+}

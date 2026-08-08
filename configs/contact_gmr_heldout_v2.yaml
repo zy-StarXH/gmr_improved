@@ -1,0 +1,127 @@
+schema_version: 1
+experiment_name: I2_contact_gmr_heldout_v2_half_anchor_cost
+formal_role: heldout
+
+paths:
+  gmr_root: /root/gpufree-data/GMR
+  gmr_motion_retarget: /root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py
+  gmr_lafan1_loader: /root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py
+  gmr_ik_config: /root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json
+  original_robot_xml: /root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml
+  quality_config: /root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml
+  source_catalog: /root/gpufree-data/gmr_improved/outputs/collision_gmr_heldout_a2_v1/collision_motion_catalog.csv
+  a2_reference_catalog: /root/gpufree-data/gmr_improved/outputs/collision_gmr_heldout_a2_v1/collision_motion_catalog.csv
+  derived_robot_xml: /root/gpufree-data/gmr_improved/assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml
+  collision_pairs_csv: /root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_pairs.csv
+  collision_model_audit: /root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_model_audit.json
+  contact_input_audit: /root/gpufree-data/gmr_improved/assets/contact_gmr_heldout_v2/contact_input_audit.json
+  temporal_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py
+  temporal_experiment_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py
+  temporal_v2_config: /root/gpufree-data/gmr_improved/configs/temporal_gmr_v2.yaml
+  collision_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision.py
+  collision_model_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision_model.py
+  collision_experiment_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision_experiment.py
+  collision_cli_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/collision_cli.py
+  contact_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/contact.py
+  contact_input_audit_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/contact_input_audit.py
+  contact_experiment_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/contact_experiment.py
+  contact_cli_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/contact_cli.py
+
+frozen_inputs:
+  gmr_commit: bb1bbe40774794fceb2a7c579a3464a28e68c844
+  gmr_motion_retarget_sha256: 3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663
+  gmr_lafan1_loader_sha256: 3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c
+  gmr_ik_config_sha256: cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320
+  original_robot_xml_sha256: 85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8
+  quality_config_sha256: f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882
+  source_catalog_sha256: 8b6eb9a4105b52cf35fb1606b49046bb61ed8808eb80ac77ed218936a6e7bc68
+  a2_reference_catalog_sha256: 8b6eb9a4105b52cf35fb1606b49046bb61ed8808eb80ac77ed218936a6e7bc68
+  derived_robot_xml_sha256: 02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff
+  collision_pairs_csv_sha256: bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff
+  collision_model_audit_sha256: ac48303565d8e373dcbc31a1fc9001ed8f4f749e3e624db22bf049b77c87df27
+  contact_input_audit_sha256: 6ac0c9334b771c227832652131f41f74a530060780119fd66d9cf1ff8cecf9e7
+  temporal_implementation_sha256: c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0
+  temporal_experiment_implementation_sha256: bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746
+  temporal_v2_config_sha256: 4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5
+  collision_implementation_sha256: 04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40
+  collision_model_implementation_sha256: 9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e
+  collision_experiment_implementation_sha256: 8500e264b8ec662c6e8187bc08407dbe3859c78b97cc66a516b56f9395e288b9
+  collision_cli_implementation_sha256: 1dda38c82fa50fb564122a7bd4bc8a4a9bac38c1f552d763f5c1f253779dcd17
+  contact_implementation_sha256: 8c57d5e13def9661840a1281cea2202324dc486fc7481e4a62046adec6e32e15
+  contact_input_audit_implementation_sha256: 6b442b30fb37b7d5e21f5e14d2fb7997c8049e53cacee1a6f6be7cdb2c52e0f6
+  contact_experiment_implementation_sha256: 2b65a0d88e6f456e4cb180b9b2a22ef75d64b035a1f635c7eef744a3f7899ed5
+  contact_cli_implementation_sha256: 8ed9077c59efff73607a1ee27336e2ada9ab315cac860f4c26407eb25532fd54
+  motion_count: 15
+  total_frames: 91627
+
+gmr:
+  solver: daqp
+  damping: 0.5
+
+temporal_gmr:
+  output_fps: 30.0
+  max_joint_velocity_rad_s: 9.41535318280861
+  previous_posture_cost: 1.0
+  soft_limit_cost: 10.0
+  soft_limit_margin_fraction: 0.03
+  soft_limit_min_margin_rad: 0.0
+  trust_region_tolerance_rad: 0.0000001
+  enabled: true
+
+collision_gmr:
+  minimum_distance_m: 0.005
+  detection_distance_m: 0.020
+  gain: 0.85
+  bound_relaxation: 0.0
+  broadphase: true
+  expected_pair_count: 362
+  minimum_tree_distance: 3
+  hand_patterns:
+    - left_wrist
+    - right_wrist
+    - left_rubber_hand
+    - right_rubber_hand
+  enabled: true
+
+# Frozen after v2 development passed and before any A3 held-out output.
+contact_gmr:
+  human_left_foot_name: LeftFootMod
+  human_right_foot_name: RightFootMod
+  ground_percentile: 2.0
+  enter_height_m: 0.04
+  exit_height_m: 0.06
+  enter_vertical_speed_m_s: 0.20
+  exit_vertical_speed_m_s: 0.40
+  enter_horizontal_speed_m_s: 0.20
+  exit_horizontal_speed_m_s: 0.40
+  left_foot_body: left_ankle_roll_link
+  right_foot_body: right_ankle_roll_link
+  anchor_xy_cost: 50.0
+  anchor_z_cost: 25.0
+  sole_clearance_m: 0.002
+  target_max_ground_penetration_m: 0.005
+  max_root_lift_m: 0.050
+  max_root_lift_rise_per_frame_m: 0.020
+  max_root_lift_release_per_frame_m: 0.005
+  sole_sphere_max_radius_m: 0.010
+  expected_sole_geom_count_per_foot: 4
+  enable_feet_only_anchors: true
+  enable_feet_only_root_lift: true
+  enable_floor_motion_anchors: false
+  enable_floor_motion_root_lift: false
+  enabled: true
+
+acceptance:
+  primary_scope: feet_only
+  require_strict_improvement:
+    - foot_slide_frame_rate
+    - ground_penetration_frame_rate
+  require_nonincrease:
+    - severe_ground_penetration_frame_rate
+    - undesired_ground_contact_frame_rate
+  floor_motion_exact_noop: true
+  preserve_zero_joint_jump_and_velocity_violation: true
+  no_new_hard_fail: true
+  maximum_overall_fidelity_pass_rate_decline_relative_to_a2: 0.02
+  maximum_overall_self_collision_nonhand_rate_increase: 0.001
+  ignore_uncalibrated_quality_score: true

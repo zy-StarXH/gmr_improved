@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-05T18:40:50+08:00",
+  "stage": "I0_temporal_gmr_frozen_development_candidate",
+  "complete": true,
+  "scope": {
+    "implementation_complete": true,
+    "development_evaluation_complete": true,
+    "held_out_evaluation_complete": false,
+    "downstream_learning_validation_complete": false,
+    "selected_candidate": "temporal_gmr_v2"
+  },
+  "nested_audits": {
+    "v1": {
+      "path": "data/temporal_gmr_v1_audit.json",
+      "ok": true,
+      "mismatch_count": 0,
+      "motion_count": 15,
+      "frame_count": 90540
+    },
+    "v2": {
+      "path": "data/temporal_gmr_v2_audit.json",
+      "ok": true,
+      "mismatch_count": 0,
+      "motion_count": 15,
+      "frame_count": 90540
+    }
+  },
+  "files": [
+    {
+      "path": "configs/temporal_gmr_v1.yaml",
+      "size_bytes": 1876,
+      "sha256": "3fd23be0aea0a40bc82ea4b34101e229f5086a649a4ed4ee67c75d9b096aae0e"
+    },
+    {
+      "path": "configs/temporal_gmr_v2.yaml",
+      "size_bytes": 2026,
+      "sha256": "4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5"
+    },
+    {
+      "path": "src/gmr_improved/temporal.py",
+      "size_bytes": 17240,
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    },
+    {
+      "path": "src/gmr_improved/temporal_experiment.py",
+      "size_bytes": 15620,
+      "sha256": "bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746"
+    },
+    {
+      "path": "src/gmr_improved/temporal_cli.py",
+      "size_bytes": 1663,
+      "sha256": "7cc5a2578c57b1888070ec6d00518fc262347256d3820c2d021e34840a20513f"
+    },
+    {
+      "path": "src/gmr_improved/temporal_compare.py",
+      "size_bytes": 10876,
+      "sha256": "b5d0f4d2af31be4f948f9d8cf3a21c8e9f71d054bea1e0513e8ee085035cb80b"
+    },
+    {
+      "path": "src/gmr_improved/temporal_compare_cli.py",
+      "size_bytes": 791,
+      "sha256": "2882d75b641101f5714e0abd25c329e38792c62ac42beace976855f223250be1"
+    },
+    {
+      "path": "src/gmr_improved/temporal_audit.py",
+      "size_bytes": 7938,
+      "sha256": "7975613e85b2dbd6ec93fd601e95995ce1cd0c01558354b6b55af9ecabce9460"
+    },
+    {
+      "path": "src/gmr_improved/temporal_audit_cli.py",
+      "size_bytes": 1184,
+      "sha256": "0d1cf73cc5362c1c54130a4541a7169db615dc8f9b446ad7e2615396fc88842d"
+    },
+    {
+      "path": "tests/test_temporal.py",
+      "size_bytes": 4065,
+      "sha256": "c2f5b8917a21643a386fa53b8cc679d56f9d0b2a7b450f9eabdb9c1968206f07"
+    },
+    {
+      "path": "tests/test_temporal_compare.py",
+      "size_bytes": 603,
+      "sha256": "98d47e5dedbb38c4b676e656adebe007894fefc1bc7f10efd10ca60ef033d110"
+    },
+    {
+      "path": "tests/test_temporal_audit.py",
+      "size_bytes": 316,
+      "sha256": "c1874dbca403f8d65a789dc4cbc099c206300733a87f5a73a49e2f11ca9d56ed"
+    },
+    {
+      "path": "reports/TEMPORAL_GMR_REPORT.md",
+      "size_bytes": 7616,
+      "sha256": "41486bc58c6a35654cfae7a0ab6d4ab84981b61a8eda87049fe0514f5f180a2c"
+    },
+    {
+      "path": "data/TEMPORAL_GMR_CATEGORY_COMPARISON_V2.csv",
+      "size_bytes": 2781,
+      "sha256": "ba898cb798d4c05f0a62a7289109ad7710cf6e45814a18ed3d7b4200ad21c5ac"
+    },
+    {
+      "path": "data/temporal_gmr_v1_audit.json",
+      "size_bytes": 889,
+      "sha256": "4e9ed4a7e8fbaebb511ce355d8ad23c02c02ad519fe30f03f4e8101502a310a8"
+    },
+    {
+      "path": "data/temporal_gmr_v2_audit.json",
+      "size_bytes": 888,
+      "sha256": "0b86ab96e359572eb2464756b9f5776a78b7b072e96f33d5b50780c7b4b46e60"
+    },
+    {
+      "path": "outputs/temporal_gmr_development_v1/run_manifest.json",
+      "size_bytes": 20135,
+      "sha256": "f2f2a7d2833f1f6a03babe6e3de528d74c487af732c3103ac61b7c2fad3e491a"
+    },
+    {
+      "path": "outputs/temporal_gmr_development_v1_quality/run_manifest.json",
+      "size_bytes": 40748,
+      "sha256": "706e55608baf200094bb1be8e6884ece46aa29bba16cf989b8879ac8058374cf"
+    },
+    {
+      "path": "outputs/temporal_gmr_comparison_v1/comparison_manifest.json",
+      "size_bytes": 734,
+      "sha256": "631e70382caa6c04f43f3a00f01676cbbe6c0a415a14811e29c9c3ea69ce03b0"
+    },
+    {
+      "path": "outputs/temporal_gmr_comparison_v1/comparison_summary.json",
+      "size_bytes": 5423,
+      "sha256": "e60459916401a5890fb799762449f99bb710f8113067a8e7f7e36b0949aa7ca7"
+    },
+    {
+      "path": "outputs/temporal_gmr_development_v2/run_manifest.json",
+      "size_bytes": 20147,
+      "sha256": "a1d5d41a1b0b5f39be3103e8de16744123ece492c168365cd131b9b9f1a3c51e"
+    },
+    {
+      "path": "outputs/temporal_gmr_development_v2_quality/run_manifest.json",
+      "size_bytes": 40748,
+      "sha256": "18a137ed0a3627e728ca6a576d2491ab638570179f50c2d08f3516f888dd5a33"
+    },
+    {
+      "path": "outputs/temporal_gmr_comparison_v2/comparison_manifest.json",
+      "size_bytes": 734,
+      "sha256": "63ca65b8cba8c325d374be3a1b43356a60802cd81b53b3361bd2362cbb57ebf7"
+    },
+    {
+      "path": "outputs/temporal_gmr_comparison_v2/comparison_summary.json",
+      "size_bytes": 5412,
+      "sha256": "f3a8bf6f6397f65c00d76effd14a1c11a63788ac55436e06f70c800d4488aa6c"
+    }
+  ]
+}

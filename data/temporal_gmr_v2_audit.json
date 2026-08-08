@@ -1,0 +1,17 @@
+{
+  "comparison_manifest": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_comparison_v2/comparison_manifest.json",
+  "comparison_manifest_sha256": "63ca65b8cba8c325d374be3a1b43356a60802cd81b53b3361bd2362cbb57ebf7",
+  "comparison_output_count": 3,
+  "frame_count": 90540,
+  "generation_manifest": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_development_v2/run_manifest.json",
+  "generation_manifest_sha256": "a1d5d41a1b0b5f39be3103e8de16744123ece492c168365cd131b9b9f1a3c51e",
+  "max_trust_region_ratio": 1.000000000000001,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "motion_count": 15,
+  "ok": true,
+  "quality_manifest": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_development_v2_quality/run_manifest.json",
+  "quality_manifest_sha256": "18a137ed0a3627e728ca6a576d2491ab638570179f50c2d08f3516f888dd5a33",
+  "quality_output_count": 18,
+  "schema_version": 1
+}

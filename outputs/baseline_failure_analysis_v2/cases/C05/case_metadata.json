@@ -1,0 +1,17 @@
+{
+  "case_id": "C05",
+  "case_type": "ground_penetration",
+  "contact_policy": "floor_motion",
+  "entities": "[\"left_ankle_roll_link\",\"right_ankle_pitch_link\",\"right_ankle_roll_link\",\"right_elbow_link\",\"right_hip_pitch_link\",\"right_hip_roll_link\",\"right_hip_yaw_link\",\"right_knee_link\",\"right_shoulder_yaw_link\",\"right_wrist_pitch_link\",\"right_wrist_roll_link\",\"right_wrist_yaw_link\"]",
+  "event_duration_s": 0.7666666666666667,
+  "event_end_frame": 2944,
+  "event_start_frame": 2922,
+  "max_severity": 0.2142825503579792,
+  "motion_category": "floor_motion",
+  "motion_name": "pushAndFall1_subject4",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/pushAndFall1_subject4.pkl",
+  "pose_frames": "[2892,2912,2933,2954,2974]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 2974,
+  "window_start_frame": 2892
+}

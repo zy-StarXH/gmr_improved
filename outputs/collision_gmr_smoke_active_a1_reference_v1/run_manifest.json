@@ -1,0 +1,98 @@
+{
+  "catalog": {
+    "path": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_smoke_active_a1_reference_v1/temporal_motion_catalog.csv",
+    "sha256": "8ee07cd6d06bcbfb08e6d6e426709b19dfd96a5c29398c1e27093afe3e0e87eb"
+  },
+  "cohort": {
+    "max_frames_per_motion": 300,
+    "motion_count": 1,
+    "requested_motions": [
+      "multipleActions1_subject4"
+    ],
+    "source_catalog": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+    "source_catalog_sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3",
+    "total_frames": 300
+  },
+  "complete": true,
+  "elapsed_seconds": 3.9237327482551336,
+  "experiment": "I0_temporal_gmr_development",
+  "experiment_config": {
+    "path": "/root/gpufree-data/gmr_improved/configs/temporal_gmr_v2.yaml",
+    "sha256": "4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5"
+  },
+  "formal_development_run": false,
+  "frozen_artifacts": [
+    {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py",
+      "sha256": "3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663"
+    },
+    {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py",
+      "sha256": "3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c"
+    },
+    {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320"
+    },
+    {
+      "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+      "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+    }
+  ],
+  "gmr": {
+    "change_count": 3,
+    "commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "damping": 0.5,
+    "dirty": true,
+    "internal_timestep_s": 0.002,
+    "repository_root": "/root/gpufree-data/GMR",
+    "solver": "daqp",
+    "upstream_use_velocity_limit": false
+  },
+  "implementation_sources": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py",
+      "sha256": "bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_cli.py",
+      "sha256": "7cc5a2578c57b1888070ec6d00518fc262347256d3820c2d021e34840a20513f"
+    }
+  ],
+  "inputs": [
+    {
+      "contact_policy": "feet_only",
+      "diagnostic_csv": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_smoke_active_a1_reference_v1/diagnostics/multipleActions1_subject4.csv",
+      "diagnostic_csv_sha256": "20cb3b6cd9f4cf8a9d363474d50e6b43ee19eee9300184134f3a3eb8223d60ef",
+      "max_observed_joint_velocity_rad_s": 9.41535318280861,
+      "max_observed_trust_region_ratio": 1.0,
+      "motion_category": "complex_dynamic",
+      "motion_name": "multipleActions1_subject4",
+      "output_frame_count": 300,
+      "output_pkl": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_smoke_active_a1_reference_v1/retargeted/multipleActions1_subject4.pkl",
+      "output_pkl_sha256": "97f905bfafea0880c0aa86f660fe132b22632b2b999b64a337a3c8b5c8cd57ce",
+      "retarget_seconds": 1.214296666905284,
+      "serialization_roundtrip_exact": true,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/multipleActions1_subject4.bvh",
+      "source_bvh_sha256": "f73d503584c1ba1566d85d2ca91f854d9278e9c4865fe697e69d0def3db223cb",
+      "source_fps": 30.000300003000028,
+      "source_frame_count": 4587,
+      "trust_region_bound_satisfied": true
+    }
+  ],
+  "intervention": {
+    "enabled": true,
+    "max_joint_velocity_rad_s": 9.41535318280861,
+    "output_fps": 30.0,
+    "previous_posture_cost": 1.0,
+    "soft_limit_cost": 10.0,
+    "soft_limit_margin_fraction": 0.03,
+    "soft_limit_min_margin_rad": 0.0,
+    "trust_region_tolerance_rad": 1e-07
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,89 @@
+protocol: /root/gpufree-data/gmr_improved/data/visual_review_protocol.md
+source_case_catalog: /root/gpufree-data/gmr_improved/outputs/baseline_failure_analysis_v2/tables/failure_case_catalog.csv
+reviewer: codex_structured_visual_audit
+reviewed_at: "2026-08-05"
+reviews:
+  - case_id: C01
+    visible_artifact: partial
+    metric_agreement: agree
+    notes: >-
+      舞蹈姿态在事件附近发生明显上肢构型切换；left_shoulder_yaw_link 与 torso_link
+      的非手部碰撞深度达到 0.0992 m，同时窗口最大关节 step/速度为
+      1.153 rad/34.58 rad/s。点线骨架不显示 mesh 体积，不能直接观察完整穿插，
+      但该 pair 的运动学树距离为 3，不属于本分析标记的近相邻结构重叠。
+  - case_id: C02
+    visible_artifact: partial
+    metric_agreement: partial
+    notes: >-
+      摔倒起身动作在窗口中合理进入贴地和蜷缩阶段，但左右下肢明显交叠；
+      left_hip_yaw_link 与 right_knee_link 的深度为 0.0976 m，窗口还出现
+      0.0911 m 地面穿透。floor-motion 语义解释接触姿态，却不能证明该几何穿插合理。
+  - case_id: C03
+    visible_artifact: confirmed
+    metric_agreement: agree
+    notes: >-
+      multiple-actions 轨迹从站立快速进入折叠贴地姿态，左臂与左髋区域重叠；
+      left_elbow_link 与 left_hip_roll_link 的碰撞深度为 0.0820 m，并伴随
+      约 0.0850 m 穿地和关节长期贴限，指标与可见拥挤姿态同向。
+  - case_id: C04
+    visible_artifact: confirmed
+    metric_agreement: agree
+    notes: >-
+      标记为 walking 的窗口持续呈现极度蜷缩和肢体拥挤，而不是常规步行姿态；
+      left_elbow_link 与 left_hip_yaw_link 的事件持续 2.83 s、深度 0.0775 m，
+      窗口同时有 0.1308 m 穿地和全程贴近关节限位，属于优先修复案例。
+  - case_id: C05
+    visible_artifact: confirmed
+    metric_agreement: partial
+    notes: >-
+      push-and-fall 动作合理包含倒地过程，但事件段多处身体位于地面以下；最大穿透
+      0.2143 m，涉及双足、右腿、右臂等多个 body，并伴随速度峰值。动作语义允许
+      身体触地，不允许大范围实体穿过地面，因此几何异常成立、任务可执行性仍未知。
+  - case_id: C06
+    visible_artifact: confirmed
+    metric_agreement: agree
+    notes: >-
+      walk2 窗口从低位折叠恢复站立，事件连续 2.23 s，最大穿透 0.2107 m，涉及
+      左足、左膝和左髋；该动作使用 feet_only，深度和持续时间均不能由正常足底接触解释。
+  - case_id: C07
+    visible_artifact: confirmed
+    metric_agreement: partial
+    notes: >-
+      multiple-actions 窗口包含合理的下蹲/近地语义，但骨架多个阶段低于地面；
+      双足、右膝和右髋最大穿透 0.1794 m、持续 2.10 s。接触语义可能影响
+      “是否应触地”的判断，却不消除穿透深度本身。
+  - case_id: C08
+    visible_artifact: confirmed
+    metric_agreement: agree
+    notes: >-
+      fighting 窗口出现孤立的 2.479 rad step 和 74.36 rad/s 峰值；具体为
+      left_shoulder_roll_joint 从 1.8787 rad 一帧跳到 -0.6000 rad（恰在下限），
+      下一帧只变化 0.0029 rad。该“单帧切换后稳定”形态支持局部解/边界切换诊断，
+      但尚未证明具体求解机制的因果性。
+  - case_id: C09
+    visible_artifact: partial
+    metric_agreement: agree
+    notes: >-
+      push-and-fall 的贴地姿态符合来源主题，但时间线存在多个孤立尖峰；最大事件为
+      right_wrist_pitch_joint 从 -0.7403 rad 跳到 1.4103 rad，step 2.151 rad、
+      速度 64.52 rad/s。骨架图难以显示腕部轴角突变，数值异常本身无歧义。
+  - case_id: C10
+    visible_artifact: partial
+    metric_agreement: agree
+    notes: >-
+      舞蹈姿态整体可辨认，但窗口内关节 step/速度连续多次超过阈值；最大事件为
+      left_wrist_roll_joint 从 -0.6778 rad 跳到 1.1980 rad，step 1.876 rad、
+      速度 56.27 rad/s。静态稀疏帧只能部分展示局部腕部突变。
+  - case_id: C11
+    visible_artifact: control_plausible
+    metric_agreement: not_applicable
+    notes: >-
+      walk1 对照窗口保持连贯步行姿态，无非手部自碰撞或穿地，最大 step/速度为
+      0.174 rad/5.23 rad/s，均低于冻结阈值；它用于证明指标并非把所有运动都标成严重异常。
+  - case_id: C12
+    visible_artifact: control_plausible
+    metric_agreement: partial
+    notes: >-
+      jumps1 对照窗口保持可解释的屈膝和跳跃姿态，且无自碰撞或穿地；但窗口仍有
+      孤立的 0.707 rad/21.22 rad/s 峰值。该样本是“无 hard-fail 对照”，不是
+      “所有基础指标都为零”的完美对照，负面细节予以保留。

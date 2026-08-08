@@ -1,0 +1,49 @@
+schema_version: 1
+evidence_levels:
+  confirmed: directly established by frozen code or reproduced data
+  supported: multiple observations are consistent, but intervention has not established causality
+  hypothesis: plausible mechanism requiring controlled ablation
+
+findings:
+  - id: temporal_discontinuity
+    level: confirmed
+    evidence:
+      - 1980 flagged jump intervals in all 15 motions
+      - every jump frame is also a velocity-violation frame
+      - frozen generation explicitly used use_velocity_limit=false
+      - C08-C10 contain one-frame 1.876-2.479 rad changes
+    boundary: source target continuity and exact solver causality are not yet established
+  - id: limit_saturation_coupling
+    level: supported
+    evidence:
+      - 49426 of 90540 frames are within the normalized 2% joint-limit band
+      - 81.62% of jump frames and 92.33% of non-hand collision frames are near a limit
+      - waist pitch and both ankle roll joints account for 83.21% of nearest-limit flagged frames
+      - C08 jumps directly to the left shoulder roll lower limit
+    boundary: co-occurrence is not causal proof; A1 ablation is required
+  - id: collision_constraint_gap
+    level: confirmed
+    evidence:
+      - GMR source uses ConfigurationLimit and optional VelocityLimit but no CollisionAvoidanceLimit
+      - sustained non-hand collision hard-fail affects 11 of 15 motions
+      - 409 of 545 non-hand collision events are from pairs with kinematic tree distance greater than 2
+    boundary: 136 near-structural events require separate geometry audit and must not enter a blanket pair constraint
+  - id: ground_contact_gap
+    level: confirmed
+    evidence:
+      - GMR maps task frames but contains no stance-foot lock or ground non-penetration constraint
+      - ground penetration affects 9497 frames and severe penetration affects 3555 frames in 8 motions
+      - floor-motion pooled penetration rate is 51.84%; standing/walking also contains a 21.07 cm case
+    boundary: expected floor contact and physical penetration must remain distinct
+  - id: repeated_ik_integration_causes_jumps
+    level: hypothesis
+    evidence:
+      - source code permits repeated IK integration within each target frame
+      - velocity constraints were disabled in the frozen run
+    required_test: capture every internal increment and compare one-solve, per-increment-limited and whole-frame-trust-region variants
+  - id: root_height_projection_alone_is_sufficient
+    level: hypothesis
+    evidence:
+      - multiple severe cases include many bodies, not only foot soles
+    required_test: compare root-only correction against contact-aware foot constraints and measure fidelity, sliding and non-foot penetration
+

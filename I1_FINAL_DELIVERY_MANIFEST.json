@@ -1,0 +1,210 @@
+{
+  "artifact_count": 37,
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "ca35257d49e376e8fb71513e1b44df9494130bbb79108f268ccd55af90e10fcd",
+      "size_bytes": 2736
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "840a78b72fb253e655725f37d536fd84a124d769f5f624035569857f25eff82e",
+      "size_bytes": 1731
+    },
+    {
+      "path": "configs/collision_gmr_v1.yaml",
+      "sha256": "520f82b80fbd96c1bbcdc8e2881db5e9bd435e35c19b1e95cac1f7be2ec3444a",
+      "size_bytes": 4506
+    },
+    {
+      "path": "configs/collision_gmr_heldout_v1.yaml",
+      "sha256": "0a5aa5b535271abec40cbeb8afea1405651a8979cce58e098b75db624694013b",
+      "size_bytes": 4979
+    },
+    {
+      "path": "assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml",
+      "sha256": "02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff",
+      "size_bytes": 30031
+    },
+    {
+      "path": "assets/collision_g1_v1/collision_pairs.csv",
+      "sha256": "bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff",
+      "size_bytes": 52081
+    },
+    {
+      "path": "assets/collision_g1_v1/geom_name_map.csv",
+      "sha256": "668cf7728bda4d0eb64fa55014920be24a29207d378232a773008179f41b925e",
+      "size_bytes": 3948
+    },
+    {
+      "path": "assets/collision_g1_v1/collision_model_audit.json",
+      "sha256": "ac48303565d8e373dcbc31a1fc9001ed8f4f749e3e624db22bf049b77c87df27",
+      "size_bytes": 1935
+    },
+    {
+      "path": "assets/collision_g1_v1/collision_model_manifest.json",
+      "sha256": "5ce1b187dcab7a648d8ea192545700deab8ca16ce4e4a6563e0a66636b936549",
+      "size_bytes": 1197
+    },
+    {
+      "path": "reports/COLLISION_GMR_I1_FINAL_REPORT.md",
+      "sha256": "4559c14625f34859cde6bf0fba7d412a408a437ebf5482b4957ff6d8f1a303c8",
+      "size_bytes": 10118
+    },
+    {
+      "path": "src/gmr_improved/collision.py",
+      "sha256": "04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40",
+      "size_bytes": 11683
+    },
+    {
+      "path": "src/gmr_improved/collision_model.py",
+      "sha256": "9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e",
+      "size_bytes": 20143
+    },
+    {
+      "path": "src/gmr_improved/collision_experiment.py",
+      "sha256": "8500e264b8ec662c6e8187bc08407dbe3859c78b97cc66a516b56f9395e288b9",
+      "size_bytes": 17313
+    },
+    {
+      "path": "src/gmr_improved/collision_compare.py",
+      "sha256": "88a1c40439994d81e5b49e2f69bffa64d705b0ea71c6239d0e2b709c4a79b90d",
+      "size_bytes": 14422
+    },
+    {
+      "path": "src/gmr_improved/collision_event_audit.py",
+      "sha256": "134dfd47f180bc4cd006154fecea6e88984a15a3cf10c23c02f1320d78886ea8",
+      "size_bytes": 7129
+    },
+    {
+      "path": "src/gmr_improved/collision_geometry_audit.py",
+      "sha256": "b80ee2e9e470b77225441fe48bc7b3edcb3064ecebc37325ac5cae51397c6a79",
+      "size_bytes": 9383
+    },
+    {
+      "path": "src/gmr_improved/viewer_compat.py",
+      "sha256": "bb7e53ffafe04b522c82ff05c6058f569f11759b3c721bd89f5d90ff7ac0c7f0",
+      "size_bytes": 2113
+    },
+    {
+      "path": "src/gmr_improved/i1_delivery.py",
+      "sha256": "d3b4eeafa16ba270be75e8363e482c2aee4b128680851f0f26b6b6d1e4a8d5a7",
+      "size_bytes": 11250
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1/run_manifest.json",
+      "sha256": "da00efc9b697d1e2426350809e299bd1183f6c378a9fc98be37874d1960f6a7d",
+      "size_bytes": 26759
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_quality/run_manifest.json",
+      "sha256": "2b5ceb410c3b2e13958d9553c28c54619e6b8754bd800cded26f94afc319c977",
+      "size_bytes": 36795
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_comparison_v2/comparison_manifest.json",
+      "sha256": "7f49611895c09a3eb09b4ea78b91e23b4c46d4903137b9b640b630a5283a67f5",
+      "size_bytes": 897
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_comparison_v2/comparison_summary.json",
+      "sha256": "ddbf3b0e0616de91d5d48ab5fed82bad8d90ace15bdc535316987b429cc3ec22",
+      "size_bytes": 6718
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_event_audit/audit_manifest.json",
+      "sha256": "bce10308c92e33bc07dbbfb76b7aba79467973923f2dbe6be196e46ba3cbaadd",
+      "size_bytes": 563
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_event_audit/event_coverage_audit.json",
+      "sha256": "82f46fa631bee0dd0654194c52e070d179fbeb279ef04369a2089118b78fc3fe",
+      "size_bytes": 2151
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_geometry_audit/audit_manifest.json",
+      "sha256": "8a1893553257fc14e3e5d7d384847db8eb000fa71e736c1228c9f18401cd9179",
+      "size_bytes": 574
+    },
+    {
+      "path": "outputs/collision_gmr_development_v1_geometry_audit/geometry_audit_summary.json",
+      "sha256": "038a4b3cd3d68cd89f135b154720181b9c1b5e2774bdd7cd8993e8dd63bb6b9b",
+      "size_bytes": 2532
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1/run_manifest.json",
+      "sha256": "098fe614e6a7372d463c97e13314bfc7e58c1bd95b2fa0aac692c743a3d7de63",
+      "size_bytes": 26718
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_quality/run_manifest.json",
+      "sha256": "893cb5db12d531b626ca04f83991866665d89511b9b3438976fe03c06b01bc37",
+      "size_bytes": 43188
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_comparison/comparison_manifest.json",
+      "sha256": "12c8f663b1165810118df18af2b64c1f765ad1f0d77819f8a2c0ffcd57178910",
+      "size_bytes": 897
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_comparison/comparison_summary.json",
+      "sha256": "150d4c1aa5e2a404f29f4f1c3f8e1f9962d927fab7b22ef3b3d06a0cbed6038a",
+      "size_bytes": 6761
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_comparison/paired_motion_metrics.csv",
+      "sha256": "efe0e311d9ed743584e97a3fdcba296e58644a6f82baecece7dbb2e0a03f1149",
+      "size_bytes": 23252
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_comparison/category_metrics.csv",
+      "sha256": "f4e32833d85f3bc5b5b7cd8aa15746b4bb795e1b0b2488f41de8d64c3068e2da",
+      "size_bytes": 15801
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_event_audit/audit_manifest.json",
+      "sha256": "e47a4a20c543ecc25ee00e2d28de610c39de87ab0dc252ba8b55560d57d8e7e2",
+      "size_bytes": 563
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_event_audit/event_coverage_audit.json",
+      "sha256": "c479e070b9aea0cb887b4704040ec8299d102fc4accbafca8712a49db31464ad",
+      "size_bytes": 2151
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_geometry_audit/audit_manifest.json",
+      "sha256": "604ff667da8d32bb8141a97affb50a1c7abc0fb554468f9bcfb4e24eb5a5852b",
+      "size_bytes": 574
+    },
+    {
+      "path": "outputs/collision_gmr_heldout_a2_v1_geometry_audit/geometry_audit_summary.json",
+      "sha256": "b01d085a1c21b47b681f100267d58c2a31c4921cf195016e67792847d907f433",
+      "size_bytes": 2528
+    },
+    {
+      "path": "outputs/visualization_compat/dance1_subject2_a2_collision_v1.pkl",
+      "sha256": "22396d4deb82da084e6ba007c48c6461fd7e53adf9e3f00fe9815f7769d42de8",
+      "size_bytes": 1137157
+    }
+  ],
+  "created_at_utc": "2026-08-06T03:25:01.975079+00:00",
+  "notes": [
+    "PLAN.md is excluded because it records this manifest hash after creation.",
+    "The final audit file is excluded to avoid self-reference.",
+    "Passing the gate does not imply strict collision-free output; the remaining penetration count is explicitly validated."
+  ],
+  "schema_version": 1,
+  "stage": "I1_Collision_GMR",
+  "status": "completed",
+  "validation": {
+    "development_gate_pass": true,
+    "heldout_frame_count": 91627,
+    "heldout_gate_pass": true,
+    "heldout_motion_count": 15,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "ok": true,
+    "remaining_penetrating_frames": 677,
+    "uncalibrated_quality_score_used": false
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "catalog": {
+    "path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_smoke_v2_walk4/contact_motion_catalog.csv",
+    "sha256": "afd4ab324f0511510717bfc41b278fb0d8df1d37bc4c63e9823e16ce7e9cdb09"
+  },
+  "cohort": {
+    "a2_reference_catalog": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_development_v1/collision_motion_catalog.csv",
+    "a2_reference_catalog_sha256": "25ba0f4eb10caccc560ed13ff3ca0e0ab057e8ed6f4d548ef5c8c326335a097f",
+    "max_frames_per_motion": 300,
+    "motion_count": 1,
+    "requested_motions": [
+      "walk4_subject1"
+    ],
+    "source_catalog": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+    "source_catalog_sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3",
+    "total_frames": 300
+  },
+  "complete": true,
+  "elapsed_seconds": 5.474357983097434,
+  "experiment": "I2_contact_gmr_development_v2_half_anchor_cost",
+  "experiment_config": {
+    "path": "/root/gpufree-data/gmr_improved/configs/contact_gmr_v2.yaml",
+    "sha256": "b16d9b042682b092691366b32ff36047c04cfd50e76225e22199a965b397cb56"
+  },
+  "formal_role": "development",
+  "formal_run": false,
+  "frozen_artifacts": [
+    {
+      "label": "source catalog",
+      "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+      "sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3"
+    },
+    {
+      "label": "A2 reference catalog",
+      "path": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_development_v1/collision_motion_catalog.csv",
+      "sha256": "25ba0f4eb10caccc560ed13ff3ca0e0ab057e8ed6f4d548ef5c8c326335a097f"
+    },
+    {
+      "label": "GMR implementation",
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py",
+      "sha256": "3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663"
+    },
+    {
+      "label": "LAFAN1 loader",
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py",
+      "sha256": "3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c"
+    },
+    {
+      "label": "IK config",
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320"
+    },
+    {
+      "label": "original robot XML",
+      "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+      "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+    },
+    {
+      "label": "quality config",
+      "path": "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+      "sha256": "f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882"
+    },
+    {
+      "label": "derived robot XML",
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml",
+      "sha256": "02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff"
+    },
+    {
+      "label": "collision pair CSV",
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_pairs.csv",
+      "sha256": "bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff"
+    },
+    {
+      "label": "collision model audit",
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_model_audit.json",
+      "sha256": "ac48303565d8e373dcbc31a1fc9001ed8f4f749e3e624db22bf049b77c87df27"
+    },
+    {
+      "label": "contact input audit",
+      "path": "/root/gpufree-data/gmr_improved/assets/contact_gmr_v2/contact_input_audit.json",
+      "sha256": "af13a4462343f2507c942b9b9d2bfa1ccc0a25e1fc903999878b3befd57d89d8"
+    },
+    {
+      "label": "Temporal-GMR implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    },
+    {
+      "label": "Temporal-GMR experiment implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py",
+      "sha256": "bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746"
+    },
+    {
+      "label": "Temporal-GMR v2 config",
+      "path": "/root/gpufree-data/gmr_improved/configs/temporal_gmr_v2.yaml",
+      "sha256": "4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5"
+    },
+    {
+      "label": "collision implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision.py",
+      "sha256": "04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40"
+    },
+    {
+      "label": "collision model implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_model.py",
+      "sha256": "9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e"
+    },
+    {
+      "label": "collision experiment implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_experiment.py",
+      "sha256": "8500e264b8ec662c6e8187bc08407dbe3859c78b97cc66a516b56f9395e288b9"
+    },
+    {
+      "label": "collision CLI implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_cli.py",
+      "sha256": "1dda38c82fa50fb564122a7bd4bc8a4a9bac38c1f552d763f5c1f253779dcd17"
+    },
+    {
+      "label": "contact implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact.py",
+      "sha256": "8c57d5e13def9661840a1281cea2202324dc486fc7481e4a62046adec6e32e15"
+    },
+    {
+      "label": "contact input audit implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_input_audit.py",
+      "sha256": "6b442b30fb37b7d5e21f5e14d2fb7997c8049e53cacee1a6f6be7cdb2c52e0f6"
+    },
+    {
+      "label": "contact experiment implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_experiment.py",
+      "sha256": "2b65a0d88e6f456e4cb180b9b2a22ef75d64b035a1f635c7eef744a3f7899ed5"
+    },
+    {
+      "label": "contact CLI implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_cli.py",
+      "sha256": "8ed9077c59efff73607a1ee27336e2ada9ab315cac860f4c26407eb25532fd54"
+    }
+  ],
+  "gmr": {
+    "change_count": 4,
+    "commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "damping": 0.5,
+    "dirty": true,
+    "internal_timestep_s": 0.002,
+    "repository_root": "/root/gpufree-data/GMR",
+    "solver": "daqp",
+    "upstream_use_velocity_limit": false
+  },
+  "implementation_sources": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_experiment.py",
+      "sha256": "2b65a0d88e6f456e4cb180b9b2a22ef75d64b035a1f635c7eef744a3f7899ed5"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact.py",
+      "sha256": "8c57d5e13def9661840a1281cea2202324dc486fc7481e4a62046adec6e32e15"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_input_audit.py",
+      "sha256": "6b442b30fb37b7d5e21f5e14d2fb7997c8049e53cacee1a6f6be7cdb2c52e0f6"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_cli.py",
+      "sha256": "8ed9077c59efff73607a1ee27336e2ada9ab315cac860f4c26407eb25532fd54"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision.py",
+      "sha256": "04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    }
+  ],
+  "inputs": [
+    {
+      "anchor_active_frame_count": 299,
+      "contact_policy": "feet_only",
+      "diagnostic_csv": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_smoke_v2_walk4/diagnostics/walk4_subject1.csv",
+      "diagnostic_csv_sha256": "4f788d4cd41cadf5b7faecb769d91c6b4905f8ae9243540e6c00619ccb8ffde7",
+      "floor_motion_noop_max_abs": null,
+      "human_contact_frame_count": 300,
+      "max_applied_root_lift_m": 0.0,
+      "max_observed_joint_velocity_rad_s": 7.6734370744047515,
+      "max_observed_trust_region_ratio": 0.8149919525499686,
+      "max_post_ground_penetration_m": 0.0,
+      "max_pre_ground_penetration_m": 0.0,
+      "minimum_observed_audited_pair_distance_m": 0.0,
+      "motion_category": "standing_walking",
+      "motion_name": "walk4_subject1",
+      "output_frame_count": 300,
+      "output_pkl": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_smoke_v2_walk4/retargeted/walk4_subject1.pkl",
+      "output_pkl_sha256": "3dfcd4bd59a0e3d42f68105581cd66e5438d8116720428b90b3da419b48bfc87",
+      "retarget_seconds": 2.440495081245899,
+      "root_correction_frame_count": 0,
+      "serialization_roundtrip_exact": true,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk4_subject1.bvh",
+      "source_bvh_sha256": "900a3b7806b6436d99b7725cef095c82418ee8521c7f1893530d173e21ab9900",
+      "source_fps": 30.000300003000028,
+      "source_frame_count": 4918,
+      "trust_region_bound_satisfied": true
+    }
+  ],
+  "intervention": {
+    "collision_gmr": {
+      "bound_relaxation": 0.0,
+      "broadphase": true,
+      "detection_distance_m": 0.02,
+      "enabled": true,
+      "expected_pair_count": 362,
+      "gain": 0.85,
+      "hand_patterns": [
+        "left_wrist",
+        "right_wrist",
+        "left_rubber_hand",
+        "right_rubber_hand"
+      ],
+      "minimum_distance_m": 0.005,
+      "minimum_tree_distance": 3
+    },
+    "contact_gmr": {
+      "anchor_xy_cost": 50.0,
+      "anchor_z_cost": 25.0,
+      "enable_feet_only_anchors": true,
+      "enable_feet_only_root_lift": true,
+      "enable_floor_motion_anchors": false,
+      "enable_floor_motion_root_lift": false,
+      "enabled": true,
+      "enter_height_m": 0.04,
+      "enter_horizontal_speed_m_s": 0.2,
+      "enter_vertical_speed_m_s": 0.2,
+      "exit_height_m": 0.06,
+      "exit_horizontal_speed_m_s": 0.4,
+      "exit_vertical_speed_m_s": 0.4,
+      "expected_sole_geom_count_per_foot": 4,
+      "ground_percentile": 2.0,
+      "human_left_foot_name": "LeftFootMod",
+      "human_right_foot_name": "RightFootMod",
+      "left_foot_body": "left_ankle_roll_link",
+      "max_root_lift_m": 0.05,
+      "max_root_lift_release_per_frame_m": 0.005,
+      "max_root_lift_rise_per_frame_m": 0.02,
+      "right_foot_body": "right_ankle_roll_link",
+      "sole_clearance_m": 0.002,
+      "sole_sphere_max_radius_m": 0.01,
+      "target_max_ground_penetration_m": 0.005
+    },
+    "temporal_gmr": {
+      "enabled": true,
+      "max_joint_velocity_rad_s": 9.41535318280861,
+      "output_fps": 30.0,
+      "previous_posture_cost": 1.0,
+      "soft_limit_cost": 10.0,
+      "soft_limit_margin_fraction": 0.03,
+      "soft_limit_min_margin_rad": 0.0,
+      "trust_region_tolerance_rad": 1e-07
+    }
+  },
+  "schema_version": 1
+}

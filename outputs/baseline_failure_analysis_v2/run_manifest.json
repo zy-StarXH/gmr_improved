@@ -1,0 +1,346 @@
+{
+  "analysis_source_files": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/analysis.py",
+      "sha256": "852ed9b54144f5fc9a07a8ff9fa90dc103f8c9753233092bb945517011c43839",
+      "size_bytes": 37987
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/cli.py",
+      "sha256": "21d2a97a3e4a6de2de3e90e043f52b05958bb57cfef31a5d340d2293f46a1b54",
+      "size_bytes": 2382
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/__init__.py",
+      "sha256": "4dfa25d02c3f7bedf15c08b11bdc4caee222f3c5dc3c9d53531cfcac49a0f51b",
+      "size_bytes": 92
+    }
+  ],
+  "analysis_version": "step3_failure_analysis_v1.1",
+  "complete": true,
+  "config": {
+    "path": "/root/gpufree-data/gmr_improved/configs/baseline_analysis.yaml",
+    "sha256": "f16a43a584f78431c167ba1428be438c633ea986085b3f1b9e19464778551d9e"
+  },
+  "created_at": "2026-08-05T17:22:35.124994+08:00",
+  "environment": {
+    "packages": {
+      "PyYAML": "6.0.3",
+      "daqp": "0.8.7",
+      "matplotlib": "3.10.9",
+      "mink": "1.2.0",
+      "mujoco": "3.11.0",
+      "numpy": "2.2.6",
+      "pandas": "2.3.3",
+      "qpsolvers": "4.13.0",
+      "scipy": "1.15.3"
+    },
+    "platform": "Linux-5.15.0-171-generic-x86_64-with-glibc2.35",
+    "python": "3.10.20"
+  },
+  "files": [
+    {
+      "path": "cases/C01/case_metadata.json",
+      "sha256": "a968098287613160e2e9b5b4a0e4db09f4d0e648956208eb35db613b8c2cd8f3",
+      "size_bytes": 670
+    },
+    {
+      "path": "cases/C01/metric_timeline.png",
+      "sha256": "1eaee6a2e396abb264a237dd2389f97ebab75646e1ef97498794a29077886a9b",
+      "size_bytes": 158890
+    },
+    {
+      "path": "cases/C01/pose_montage.png",
+      "sha256": "6c60b7d3107edac3ea3b6e57fb9f6e6b9895c757a1ec5153cb79dafc4d5ccab1",
+      "size_bytes": 127025
+    },
+    {
+      "path": "cases/C02/case_metadata.json",
+      "sha256": "0a934c0b2014078e50788ed88aa5598dcb7100dba3451897ae9dba6a1a735d9d",
+      "size_bytes": 694
+    },
+    {
+      "path": "cases/C02/metric_timeline.png",
+      "sha256": "274f1194a60f3a60fefab69ada5edda507ca8dfa6183b43fd21098ae70da6c77",
+      "size_bytes": 154665
+    },
+    {
+      "path": "cases/C02/pose_montage.png",
+      "sha256": "113a269e842f6f8e2a98463ed06f8efec5ee23dfac75debb8cbe5a53ddfe2b83",
+      "size_bytes": 128414
+    },
+    {
+      "path": "cases/C03/case_metadata.json",
+      "sha256": "8fd980270d66cb2482ed5b0dadfee0fc8111c5bb36413c1418ace33e3d2db7b8",
+      "size_bytes": 701
+    },
+    {
+      "path": "cases/C03/metric_timeline.png",
+      "sha256": "0bfa2d6055ede99af9d263ac1d3a2873da49164b2e7c2a981d5f50dfb325c622",
+      "size_bytes": 171487
+    },
+    {
+      "path": "cases/C03/pose_montage.png",
+      "sha256": "0c6ba37fab18d26c6ab9b84dde76e7e061e8ec9f6bc0eeec35a40ecc77c0f93f",
+      "size_bytes": 126130
+    },
+    {
+      "path": "cases/C04/case_metadata.json",
+      "sha256": "b4ce9b885f92be512bfa0b1ca9eb5fad322f9075f50ddc8efbd2523c3a617da1",
+      "size_bytes": 678
+    },
+    {
+      "path": "cases/C04/metric_timeline.png",
+      "sha256": "ea5d16edc696886b13d5ae5308813a9a3356f0810e1701a39522007bb311fc05",
+      "size_bytes": 160773
+    },
+    {
+      "path": "cases/C04/pose_montage.png",
+      "sha256": "16c38e3b89e259319d63056bc19779d2e777954673bb6769c2cfb25cadc6715e",
+      "size_bytes": 123054
+    },
+    {
+      "path": "cases/C05/case_metadata.json",
+      "sha256": "e4bf95a847b586e620f9742f0d35352dd4972d06d9ac4a299afa4eea076a4541",
+      "size_bytes": 943
+    },
+    {
+      "path": "cases/C05/metric_timeline.png",
+      "sha256": "4ec1486d09f8b3c64798a7826c86e7edf517dfefea19b110eb0f40254b28ca48",
+      "size_bytes": 171439
+    },
+    {
+      "path": "cases/C05/pose_montage.png",
+      "sha256": "8c7275e2a9049c98ccd46c1100129722c66656155aec4359b087f70e94e3efaa",
+      "size_bytes": 124105
+    },
+    {
+      "path": "cases/C06/case_metadata.json",
+      "sha256": "f511924851aa8076b16dbeee44dcdc3eac3e1e3c6e3a6cffb682177d738c9ca5",
+      "size_bytes": 699
+    },
+    {
+      "path": "cases/C06/metric_timeline.png",
+      "sha256": "6e930948cc866def37880943dc34a5253ccb0f0eb5dfec1ee3a919c9f82eb193",
+      "size_bytes": 165729
+    },
+    {
+      "path": "cases/C06/pose_montage.png",
+      "sha256": "eb962039288087537b4da65f64171b4450e002ec915e939f8ffb42cf88ea5d8a",
+      "size_bytes": 125782
+    },
+    {
+      "path": "cases/C07/case_metadata.json",
+      "sha256": "d8cf9f67ecae37c958df938829dfa7d0d52ce6ec9e25a1307ecc632312b2491b",
+      "size_bytes": 733
+    },
+    {
+      "path": "cases/C07/metric_timeline.png",
+      "sha256": "8e602164d226166852d125d9edf4313f7f6e8fb37113ed72b44e7a273a133bb2",
+      "size_bytes": 170716
+    },
+    {
+      "path": "cases/C07/pose_montage.png",
+      "sha256": "92504b61ab27da825b42c00119f111d6db2ca64a1d93336b0fde6fc43f934dab",
+      "size_bytes": 127835
+    },
+    {
+      "path": "cases/C08/case_metadata.json",
+      "sha256": "dbcbf989950c10dc9774381b58fe4f920d13d259a13e74a961ee4c8a01dcb28d",
+      "size_bytes": 654
+    },
+    {
+      "path": "cases/C08/metric_timeline.png",
+      "sha256": "bd49803c1b5266d8ba893889e8ae89818636dd19346fb41dad7b41be255d052b",
+      "size_bytes": 133096
+    },
+    {
+      "path": "cases/C08/pose_montage.png",
+      "sha256": "509bebaece76ae6474050c8174af18d63bec196035ed229f7019d46638664e34",
+      "size_bytes": 128512
+    },
+    {
+      "path": "cases/C09/case_metadata.json",
+      "sha256": "72b4354ac30a682b5b931812ed1ef9d1c6967fc78acc56194e7d50af4aa10ff5",
+      "size_bytes": 665
+    },
+    {
+      "path": "cases/C09/metric_timeline.png",
+      "sha256": "b0cd331a8b69b82ab0212ec4f0e302c9f4c3ec369cfa0bc2890aaaf544d451ad",
+      "size_bytes": 143171
+    },
+    {
+      "path": "cases/C09/pose_montage.png",
+      "sha256": "1c15b0e823cf7e952a46d49b3d4ae1c409fb79476982a30704bb9bbb10634970",
+      "size_bytes": 124440
+    },
+    {
+      "path": "cases/C10/case_metadata.json",
+      "sha256": "845a3754e572fb8064a1b60384a51aa8d3c32d3f9becc5fcc629b604927fe87c",
+      "size_bytes": 641
+    },
+    {
+      "path": "cases/C10/metric_timeline.png",
+      "sha256": "924f3938bf06fe9d16cc8f69b57879bcae9175310ffd60f67d71c578b382056c",
+      "size_bytes": 162185
+    },
+    {
+      "path": "cases/C10/pose_montage.png",
+      "sha256": "acb4f080f064a9eca88fc42c5a476a170cb69e630b791662a5c07c1af61dc5c2",
+      "size_bytes": 126603
+    },
+    {
+      "path": "cases/C11/case_metadata.json",
+      "sha256": "6d5bdc944869212b86ed0337b90a944d2448388749ce13b938d75bc9aa11d79e",
+      "size_bytes": 615
+    },
+    {
+      "path": "cases/C11/metric_timeline.png",
+      "sha256": "910e95c26d06441ee0f64c82c4eb63092e2a25dc20fef8f58d03499d395dfd09",
+      "size_bytes": 132107
+    },
+    {
+      "path": "cases/C11/pose_montage.png",
+      "sha256": "0b69e42340554486826a12dad65d0ae36680901e5c5b99f5c23f7987ced1e07e",
+      "size_bytes": 119972
+    },
+    {
+      "path": "cases/C12/case_metadata.json",
+      "sha256": "2c4cbe4106ec7ad5a17a6fefc69b546c7930a9c219f9274b0a8191c0b2c51215",
+      "size_bytes": 616
+    },
+    {
+      "path": "cases/C12/metric_timeline.png",
+      "sha256": "cf1aaa43fb5d3e10a6d56ac429e588acdaecfd2eac094d4f937a3d0ade351846",
+      "size_bytes": 185066
+    },
+    {
+      "path": "cases/C12/pose_montage.png",
+      "sha256": "16d5209f4d1154514827c39a61db7816d8505f6d7d41bb9096c7c320a10b3621",
+      "size_bytes": 127385
+    },
+    {
+      "path": "evidence_summary.json",
+      "sha256": "23096f9a602645aa5aeee6d9fd33c105fb44298d3cea45260e0cfd7131e5b394",
+      "size_bytes": 2773
+    },
+    {
+      "path": "figures/abnormality_overlap_heatmap.png",
+      "sha256": "443cc0457874bf294d8417792fc07b73b506ff1051d6968a84d7743029f598f0",
+      "size_bytes": 166238
+    },
+    {
+      "path": "figures/failure_prevalence_by_category.png",
+      "sha256": "82fea7ea469537ebc611ff35750f3ebb5a6525ce801891c50e1ae7ba9ee3f1d7",
+      "size_bytes": 81807
+    },
+    {
+      "path": "input_audit.json",
+      "sha256": "93626d898849e3648300ff81764697efebef2bbe751d5373595e0bac5669783c",
+      "size_bytes": 2465
+    },
+    {
+      "path": "tables/abnormality_overlap.csv",
+      "sha256": "d9d659a1dfbb080f34a56837b6b7207048a1d25ec549aabc3537d57e19dad5e0",
+      "size_bytes": 5381
+    },
+    {
+      "path": "tables/collision_pair_hotspots.csv",
+      "sha256": "427b6c9e7b3019b2c319fcd710a661b40a2a2dd18cb6b692f4a3926c709feeca",
+      "size_bytes": 4406
+    },
+    {
+      "path": "tables/event_burden.csv",
+      "sha256": "2316b62596e43e3281b5b65cb3ac99ca63d6a31c5286368fdc3c6d7f8158f2dc",
+      "size_bytes": 4333
+    },
+    {
+      "path": "tables/failure_case_catalog.csv",
+      "sha256": "0bb9b0b113b4d33436e7925fb24aaac9d6b8944f680c65003247ca367b45f8e8",
+      "size_bytes": 4775
+    },
+    {
+      "path": "tables/ground_contact_body_hotspots.csv",
+      "sha256": "c19bcee29f33df737a106cf8348ff926ee32820436eadb55f27a0b23730f3449",
+      "size_bytes": 3961
+    },
+    {
+      "path": "tables/joint_hotspots.csv",
+      "sha256": "57fb5c05d96dcf167a82def68ddbafe7745b06179656113f8d01e22da4978a54",
+      "size_bytes": 4960
+    },
+    {
+      "path": "tables/motion_failure_summary.csv",
+      "sha256": "5a7b21bdd9e54010fbbaee7218f39b1f6842cef0aa1f39b825e3f84347911b57",
+      "size_bytes": 7968
+    },
+    {
+      "path": "tables/stratum_failure_summary.csv",
+      "sha256": "d295c576fb0006415b6c924d0d670a06bd748e18502a73777767e87d745c42eb",
+      "size_bytes": 6388
+    }
+  ],
+  "input_audit_sha256": "93626d898849e3648300ff81764697efebef2bbe751d5373595e0bac5669783c",
+  "schema_version": 1,
+  "source_audit": {
+    "all_source_pairs_exact": true,
+    "analysis_version": "step3_failure_analysis_v1.1",
+    "checked_at": "2026-08-05T17:22:09.340013+08:00",
+    "frame_rate_recalculation_checks": {
+      "foot_slide": true,
+      "ground_penetration": true,
+      "joint_jump": true,
+      "near_limit_2pct": true,
+      "self_collision_nonhand": true,
+      "undesired_ground_contact": true,
+      "velocity_violation": true
+    },
+    "gmr_commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "gmr_worktree_status_at_analysis": [
+      "M general_motion_retargeting/utils/xsens_vendor/mujoco_xsens_bvh_view.py",
+      "?? human_skeleton.xml",
+      "?? offsets.json"
+    ],
+    "input_files": {
+      "catalog": {
+        "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+        "sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3"
+      },
+      "evaluator_config": {
+        "path": "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+        "sha256": "f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882"
+      },
+      "gmr_core": {
+        "path": "/root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py",
+        "sha256": "3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663"
+      },
+      "ik_config": {
+        "path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+        "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320"
+      },
+      "quality_events": {
+        "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_events.csv",
+        "sha256": "8c87732a027da9b468040b073cbb84bca0c5f648068dcd791c5db7bac328b6fe"
+      },
+      "quality_summary": {
+        "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_summary.csv",
+        "sha256": "07f6768fee7caf7de1d8dccbef8d14e501b521edebd84a12906641a9cc53eb89"
+      },
+      "robot_xml": {
+        "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+        "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+      }
+    },
+    "motion_count": 15,
+    "quality_score_column_loaded_with_frozen_summary": true,
+    "quality_score_used_in_analysis": false,
+    "stratum_counts": {
+      "complex_dynamic": 3,
+      "dance": 3,
+      "floor_motion": 3,
+      "running_jumping": 3,
+      "standing_walking": 3
+    },
+    "total_frames": 90540
+  }
+}

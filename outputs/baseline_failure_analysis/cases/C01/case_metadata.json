@@ -1,0 +1,17 @@
+{
+  "case_id": "C01",
+  "case_type": "self_collision_nonhand",
+  "contact_policy": "feet_only",
+  "entities": "[\"left_shoulder_yaw_link\",\"torso_link\"]",
+  "event_duration_s": 0.1666666666666666,
+  "event_end_frame": 4161,
+  "event_start_frame": 4157,
+  "max_severity": 0.0991610661122168,
+  "motion_category": "dance",
+  "motion_name": "dance2_subject2",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/dance2_subject2.pkl",
+  "pose_frames": "[4127,4143,4159,4175,4191]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 4191,
+  "window_start_frame": 4127
+}

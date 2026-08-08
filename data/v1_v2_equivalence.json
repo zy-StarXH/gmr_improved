@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T17:23:00+08:00",
+  "comparison": "SHA-256 equality of every machine-readable CSV table",
+  "v1_directory": "/root/gpufree-data/gmr_improved/outputs/baseline_failure_analysis",
+  "v2_directory": "/root/gpufree-data/gmr_improved/outputs/baseline_failure_analysis_v2",
+  "all_equal": true,
+  "tables": {
+    "abnormality_overlap.csv": "d9d659a1dfbb080f34a56837b6b7207048a1d25ec549aabc3537d57e19dad5e0",
+    "collision_pair_hotspots.csv": "427b6c9e7b3019b2c319fcd710a661b40a2a2dd18cb6b692f4a3926c709feeca",
+    "event_burden.csv": "2316b62596e43e3281b5b65cb3ac99ca63d6a31c5286368fdc3c6d7f8158f2dc",
+    "failure_case_catalog.csv": "0bb9b0b113b4d33436e7925fb24aaac9d6b8944f680c65003247ca367b45f8e8",
+    "ground_contact_body_hotspots.csv": "c19bcee29f33df737a106cf8348ff926ee32820436eadb55f27a0b23730f3449",
+    "joint_hotspots.csv": "57fb5c05d96dcf167a82def68ddbafe7745b06179656113f8d01e22da4978a54",
+    "motion_failure_summary.csv": "5a7b21bdd9e54010fbbaee7218f39b1f6842cef0aa1f39b825e3f84347911b57",
+    "stratum_failure_summary.csv": "d295c576fb0006415b6c924d0d670a06bd748e18502a73777767e87d745c42eb"
+  },
+  "interpretation": "v1 statistics are retained, but v2 is the final reproducible entry because it additionally locks analysis source hashes"
+}

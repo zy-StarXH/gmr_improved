@@ -1,0 +1,186 @@
+{
+  "configuration": {
+    "contact_policies": {
+      "descriptive_only": {
+        "airborne_is_failure": false,
+        "undesired_ground_contact_is_failure": false
+      },
+      "feet_only": {
+        "airborne_is_failure": false,
+        "undesired_ground_contact_is_failure": true
+      },
+      "floor_motion": {
+        "airborne_is_failure": false,
+        "undesired_ground_contact_is_failure": false
+      }
+    },
+    "fidelity": {
+      "end_effector_robot_bodies": [
+        "left_ankle_roll_link",
+        "right_ankle_roll_link",
+        "left_wrist_yaw_link",
+        "right_wrist_yaw_link"
+      ],
+      "expected_ik_config_sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320",
+      "fps_tolerance_hz": 0.001,
+      "source_format": "bvh_lafan1",
+      "supported_frame_alignments": [
+        "exact",
+        "source_prefix_drop_last"
+      ],
+      "verified_pair_status": "verified_generated_exact"
+    },
+    "fidelity_artifacts": {
+      "gmr_lafan1_loader_path": "/root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py",
+      "gmr_lafan1_loader_sha256": "3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c",
+      "ik_config_path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "ik_config_sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320",
+      "pair_replay_evidence_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retarget_manifest.json",
+      "pair_replay_evidence_sha256": "79c0b68c0a112d3c3ff0368723338e036f470e214c6e0451be375bbba09f2cd7"
+    },
+    "resolved_path": "resolved_config.yaml",
+    "resolved_sha256": "42d34f85136dffa32b5b3137b0543d3f50c679b09461700f7f5474173502e1a3",
+    "scoring": {
+      "calibrated": false,
+      "version": "v1",
+      "weights": {
+        "contact": 0.3,
+        "fidelity": 0.15,
+        "joint_feasibility": 0.25,
+        "smoothness": 0.3
+      }
+    },
+    "source_path": "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+    "source_sha256": "f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882",
+    "thresholds": {
+      "fidelity_orientation_deg": 10.0,
+      "fidelity_position_m": 0.1,
+      "foot_near_ground_m": 0.01,
+      "foot_slide_speed_m_s": 0.1,
+      "foot_vertical_speed_contact_m_s": 0.2,
+      "joint_jump_step_rad": 0.5,
+      "joint_limit_tolerance_rad": 1e-06,
+      "near_limit_fraction": 0.02,
+      "near_limit_margin_rad": 0.05,
+      "penetration_m": 0.01,
+      "severe_penetration_m": 0.05,
+      "sustained_collision_frames": 5,
+      "velocity_limit_rad_s": 9.42477796076938
+    }
+  },
+  "counts": {
+    "discovered": 1,
+    "failed": 0,
+    "hard_fail": 0,
+    "skipped": 0,
+    "succeeded": 1
+  },
+  "execution": {
+    "command": [
+      "gmr-quality",
+      "evaluate",
+      "--input-dir",
+      "outputs/temporal_gmr_smoke_v2/retargeted",
+      "--pattern",
+      "*.pkl",
+      "--config",
+      "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+      "--catalog",
+      "outputs/temporal_gmr_smoke_v2/temporal_motion_catalog.csv",
+      "--output-dir",
+      "outputs/temporal_gmr_smoke_v2_quality",
+      "--no-plots",
+      "--json"
+    ],
+    "fidelity_enabled": false,
+    "fidelity_enabled_count": 0,
+    "fidelity_requested": true,
+    "input_mode": "directory",
+    "pattern": "*.pkl",
+    "plots_enabled": false
+  },
+  "gmr": {
+    "change_count": 3,
+    "commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "dirty": true,
+    "repository_root": "/root/gpufree-data/GMR",
+    "requested_path": "/root/gpufree-data/GMR"
+  },
+  "inputs": [
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "58bd3f4bb1ac5b9b5f845aaa0bfaec10cf659cf794ac8eaf1e3e0b62657ba8c5",
+      "expected_source_bvh_sha256": "4c9d591f323ffa660d9de6ef20c5d7077e66b2102a009feedf01afa22a6fbc73",
+      "failure_codes": [],
+      "fidelity_enabled": false,
+      "fidelity_reason": "Source BVH was provided but pair provenance is not verified",
+      "fidelity_status": "disabled_unverified_pair",
+      "frame_alignment": "source_prefix",
+      "hard_fail": false,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_smoke_v2/retargeted/walk1_subject1.pkl",
+      "input_sha256": "58bd3f4bb1ac5b9b5f845aaa0bfaec10cf659cf794ac8eaf1e3e0b62657ba8c5",
+      "input_size_bytes": 35559,
+      "motion_category": "standing_walking",
+      "motion_name": "walk1_subject1",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk1_subject1.bvh",
+      "source_bvh_sha256": "4c9d591f323ffa660d9de6ef20c5d7077e66b2102a009feedf01afa22a6fbc73",
+      "source_pair_status": "generated_prefix_smoke",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "FIDELITY_UNAVAILABLE",
+        "SCORE_UNCALIBRATED"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "frame_metrics/walk1_subject1.csv",
+      "sha256": "2cd2e6e7c993a2f4dd171e5301d82005ac43c59e19809e5ca8274c73ec351823",
+      "size_bytes": 55261
+    },
+    {
+      "path": "quality_events.csv",
+      "sha256": "ff31fd5faebbb20e8beb9e9379bbdff42b7c0d8b5b0e2670419e3772bb811f5e",
+      "size_bytes": 531
+    },
+    {
+      "path": "quality_summary.csv",
+      "sha256": "bd52e8025e8de4a5970686f4d48173a122a04306da1b56de5a187b0dc37d7dd8",
+      "size_bytes": 7762
+    },
+    {
+      "path": "resolved_config.yaml",
+      "sha256": "42d34f85136dffa32b5b3137b0543d3f50c679b09461700f7f5474173502e1a3",
+      "size_bytes": 3428
+    }
+  ],
+  "robot_model": {
+    "evaluated_dofs": 29,
+    "nq": 36,
+    "nv": 35,
+    "xml_path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+    "xml_sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+  },
+  "runtime": {
+    "mujoco_version": "3.11.0",
+    "platform": "Linux-5.15.0-171-generic-x86_64-with-glibc2.35",
+    "python_executable": "/root/gpufree-data/conda-envs/gmr/bin/python3.10",
+    "python_version": "3.10.20"
+  },
+  "schema_version": 1,
+  "tool": {
+    "git": {
+      "change_count": null,
+      "commit": null,
+      "dirty": null,
+      "repository_root": null,
+      "requested_path": "/root/gpufree-data/retargeting_quality_assessment"
+    },
+    "name": "gmr-quality-eval",
+    "version": "0.1.0"
+  }
+}

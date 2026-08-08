@@ -1,0 +1,17 @@
+{
+  "case_id": "C02",
+  "case_type": "self_collision_nonhand",
+  "contact_policy": "floor_motion",
+  "entities": "[\"left_hip_yaw_link\",\"right_knee_link\"]",
+  "event_duration_s": 0.4666666666666667,
+  "event_end_frame": 2013,
+  "event_start_frame": 2000,
+  "max_severity": 0.0976242747101728,
+  "motion_category": "floor_motion",
+  "motion_name": "fallAndGetUp2_subject2",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/fallAndGetUp2_subject2.pkl",
+  "pose_frames": "[1970,1988,2006,2025,2043]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 2043,
+  "window_start_frame": 1970
+}

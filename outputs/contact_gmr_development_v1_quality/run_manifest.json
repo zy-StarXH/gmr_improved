@@ -1,0 +1,830 @@
+{
+  "configuration": {
+    "contact_policies": {
+      "descriptive_only": {
+        "airborne_is_failure": false,
+        "undesired_ground_contact_is_failure": false
+      },
+      "feet_only": {
+        "airborne_is_failure": false,
+        "undesired_ground_contact_is_failure": true
+      },
+      "floor_motion": {
+        "airborne_is_failure": false,
+        "undesired_ground_contact_is_failure": false
+      }
+    },
+    "fidelity": {
+      "end_effector_robot_bodies": [
+        "left_ankle_roll_link",
+        "right_ankle_roll_link",
+        "left_wrist_yaw_link",
+        "right_wrist_yaw_link"
+      ],
+      "expected_ik_config_sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320",
+      "fps_tolerance_hz": 0.001,
+      "source_format": "bvh_lafan1",
+      "supported_frame_alignments": [
+        "exact",
+        "source_prefix_drop_last"
+      ],
+      "verified_pair_status": "verified_generated_exact"
+    },
+    "fidelity_artifacts": {
+      "gmr_lafan1_loader_path": "/root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py",
+      "gmr_lafan1_loader_sha256": "3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c",
+      "ik_config_path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "ik_config_sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320",
+      "pair_replay_evidence_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retarget_manifest.json",
+      "pair_replay_evidence_sha256": "79c0b68c0a112d3c3ff0368723338e036f470e214c6e0451be375bbba09f2cd7"
+    },
+    "resolved_path": "resolved_config.yaml",
+    "resolved_sha256": "42d34f85136dffa32b5b3137b0543d3f50c679b09461700f7f5474173502e1a3",
+    "scoring": {
+      "calibrated": false,
+      "version": "v1",
+      "weights": {
+        "contact": 0.3,
+        "fidelity": 0.15,
+        "joint_feasibility": 0.25,
+        "smoothness": 0.3
+      }
+    },
+    "source_path": "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+    "source_sha256": "f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882",
+    "thresholds": {
+      "fidelity_orientation_deg": 10.0,
+      "fidelity_position_m": 0.1,
+      "foot_near_ground_m": 0.01,
+      "foot_slide_speed_m_s": 0.1,
+      "foot_vertical_speed_contact_m_s": 0.2,
+      "joint_jump_step_rad": 0.5,
+      "joint_limit_tolerance_rad": 1e-06,
+      "near_limit_fraction": 0.02,
+      "near_limit_margin_rad": 0.05,
+      "penetration_m": 0.01,
+      "severe_penetration_m": 0.05,
+      "sustained_collision_frames": 5,
+      "velocity_limit_rad_s": 9.42477796076938
+    }
+  },
+  "counts": {
+    "discovered": 15,
+    "failed": 0,
+    "hard_fail": 11,
+    "skipped": 0,
+    "succeeded": 15
+  },
+  "execution": {
+    "command": [
+      "gmr-quality",
+      "evaluate",
+      "--input-dir",
+      "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted",
+      "--pattern",
+      "*.pkl",
+      "--config",
+      "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+      "--catalog",
+      "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/contact_motion_catalog.csv",
+      "--output-dir",
+      "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1_quality",
+      "--no-plots",
+      "--json"
+    ],
+    "fidelity_enabled": true,
+    "fidelity_enabled_count": 15,
+    "fidelity_requested": true,
+    "input_mode": "directory",
+    "pattern": "*.pkl",
+    "plots_enabled": false
+  },
+  "gmr": {
+    "change_count": 4,
+    "commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "dirty": true,
+    "repository_root": "/root/gpufree-data/GMR",
+    "requested_path": "/root/gpufree-data/GMR"
+  },
+  "inputs": [
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "ee7cd6356c8e1722972aad196ffd800a0f8da3f5632b6d8853bb9791508aba75",
+      "expected_source_bvh_sha256": "9a285b61bb0446aa4c919c62247ff895eb158bc693be3b7477d31ef070995d73",
+      "failure_codes": [
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/dance1_subject1_step10.pkl",
+      "input_sha256": "ee7cd6356c8e1722972aad196ffd800a0f8da3f5632b6d8853bb9791508aba75",
+      "input_size_bytes": 1137189,
+      "motion_category": "dance",
+      "motion_name": "dance1_subject1_step10",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/dance1_subject1.bvh",
+      "source_bvh_sha256": "9a285b61bb0446aa4c919c62247ff895eb158bc693be3b7477d31ef070995d73",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "abe9a94685de3c6b446c4e63c4f8d87abf93794acc447613e93f4c89a2bbf790",
+      "expected_source_bvh_sha256": "c7d6d108ce6d7fb3c67c5c0c74c1db78643e5c0555ff8dad1375bcf135ad4358",
+      "failure_codes": [
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/dance2_subject2.pkl",
+      "input_sha256": "abe9a94685de3c6b446c4e63c4f8d87abf93794acc447613e93f4c89a2bbf790",
+      "input_size_bytes": 1951077,
+      "motion_category": "dance",
+      "motion_name": "dance2_subject2",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/dance2_subject2.bvh",
+      "source_bvh_sha256": "c7d6d108ce6d7fb3c67c5c0c74c1db78643e5c0555ff8dad1375bcf135ad4358",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "4551335b6efa41bbae3009b67c54bf1cdf33c8485fac4f1310a7249798fc9d4a",
+      "expected_source_bvh_sha256": "a40d811b75e2bdfaa9c35e9fd5e9f56ecab0bad92bf130af5b8f36ef6ce3d5c2",
+      "failure_codes": [
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/dance2_subject5.pkl",
+      "input_sha256": "4551335b6efa41bbae3009b67c54bf1cdf33c8485fac4f1310a7249798fc9d4a",
+      "input_size_bytes": 1951077,
+      "motion_category": "dance",
+      "motion_name": "dance2_subject5",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/dance2_subject5.bvh",
+      "source_bvh_sha256": "a40d811b75e2bdfaa9c35e9fd5e9f56ecab0bad92bf130af5b8f36ef6ce3d5c2",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "floor_motion",
+      "error": null,
+      "expected_pkl_sha256": "8ee3fd7165ba046e3d50192ac6be59295ea9d21388da43f15affbf917c1df192",
+      "expected_source_bvh_sha256": "6a165a1b3790c3acbf603df4c267edf7812f0bf3f648e20e5f49918ac4211d19",
+      "failure_codes": [
+        "SEVERE_PENETRATION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/fallAndGetUp2_subject2.pkl",
+      "input_sha256": "8ee3fd7165ba046e3d50192ac6be59295ea9d21388da43f15affbf917c1df192",
+      "input_size_bytes": 1417413,
+      "motion_category": "floor_motion",
+      "motion_name": "fallAndGetUp2_subject2",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/fallAndGetUp2_subject2.bvh",
+      "source_bvh_sha256": "6a165a1b3790c3acbf603df4c267edf7812f0bf3f648e20e5f49918ac4211d19",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "2198c730c9263deb572b1a3b5bd484e908bc08ffeac3913fce84d45260d3f3e1",
+      "expected_source_bvh_sha256": "1678d40d5e5aa584bcf49b2d83765245589addcee37abe95c27a760b4e5e7de9",
+      "failure_codes": [
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/fight1_subject3.pkl",
+      "input_sha256": "2198c730c9263deb572b1a3b5bd484e908bc08ffeac3913fce84d45260d3f3e1",
+      "input_size_bytes": 2116965,
+      "motion_category": "complex_dynamic",
+      "motion_name": "fight1_subject3",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/fight1_subject3.bvh",
+      "source_bvh_sha256": "1678d40d5e5aa584bcf49b2d83765245589addcee37abe95c27a760b4e5e7de9",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "floor_motion",
+      "error": null,
+      "expected_pkl_sha256": "ac8a7452be345c6a60fae477c6dfd50fd6a358fda6e25f7b989ff54bc65bb2de",
+      "expected_source_bvh_sha256": "74125060069440a0c038a1404ca685ace42735c77dfd31526b556f4a3c3ded4e",
+      "failure_codes": [
+        "SEVERE_PENETRATION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/ground1_subject1.pkl",
+      "input_sha256": "ac8a7452be345c6a60fae477c6dfd50fd6a358fda6e25f7b989ff54bc65bb2de",
+      "input_size_bytes": 1366725,
+      "motion_category": "floor_motion",
+      "motion_name": "ground1_subject1",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/ground1_subject1.bvh",
+      "source_bvh_sha256": "74125060069440a0c038a1404ca685ace42735c77dfd31526b556f4a3c3ded4e",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "0f308fe98e51bcecc10a3e1fafae0fdc0101711124828dec4f8d99f9a3863e7a",
+      "expected_source_bvh_sha256": "1c89870da12edd65bbfc658301133792eeba9bc38dfcd534df5c5a2a3f14be18",
+      "failure_codes": [],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": false,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/jumps1_subject5.pkl",
+      "input_sha256": "0f308fe98e51bcecc10a3e1fafae0fdc0101711124828dec4f8d99f9a3863e7a",
+      "input_size_bytes": 2113221,
+      "motion_category": "running_jumping",
+      "motion_name": "jumps1_subject5",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/jumps1_subject5.bvh",
+      "source_bvh_sha256": "1c89870da12edd65bbfc658301133792eeba9bc38dfcd534df5c5a2a3f14be18",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "ac2859255a8b99ad5a98e5e7add3cf3217301d360710e52efdc2ff666b0e8a83",
+      "expected_source_bvh_sha256": "f73d503584c1ba1566d85d2ca91f854d9278e9c4865fe697e69d0def3db223cb",
+      "failure_codes": [
+        "SEVERE_PENETRATION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/multipleActions1_subject4.pkl",
+      "input_sha256": "ac2859255a8b99ad5a98e5e7add3cf3217301d360710e52efdc2ff666b0e8a83",
+      "input_size_bytes": 1322085,
+      "motion_category": "complex_dynamic",
+      "motion_name": "multipleActions1_subject4",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/multipleActions1_subject4.bvh",
+      "source_bvh_sha256": "f73d503584c1ba1566d85d2ca91f854d9278e9c4865fe697e69d0def3db223cb",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "995fa3bd94336a0bfa24bbbf09d1814c35619b75c21fdc242dcf3194819ad054",
+      "expected_source_bvh_sha256": "beacc0566a776d3dfad91ba9b1e30093d330be50ac9ab6c04a8c0c99fa0a43e5",
+      "failure_codes": [],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": false,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/obstacles3_subject3.pkl",
+      "input_sha256": "995fa3bd94336a0bfa24bbbf09d1814c35619b75c21fdc242dcf3194819ad054",
+      "input_size_bytes": 1133733,
+      "motion_category": "complex_dynamic",
+      "motion_name": "obstacles3_subject3",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/obstacles3_subject3.bvh",
+      "source_bvh_sha256": "beacc0566a776d3dfad91ba9b1e30093d330be50ac9ab6c04a8c0c99fa0a43e5",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "floor_motion",
+      "error": null,
+      "expected_pkl_sha256": "4cbac8551a46be8239048fcdabd184d7876be002d8cb469dc01339e0dc9f8c01",
+      "expected_source_bvh_sha256": "5f3370e561a6d5493d58d287c24cbecc8fe18781611e7f85be1ea8f0320d08bb",
+      "failure_codes": [
+        "SEVERE_PENETRATION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/pushAndFall1_subject4.pkl",
+      "input_sha256": "4cbac8551a46be8239048fcdabd184d7876be002d8cb469dc01339e0dc9f8c01",
+      "input_size_bytes": 1429221,
+      "motion_category": "floor_motion",
+      "motion_name": "pushAndFall1_subject4",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/pushAndFall1_subject4.bvh",
+      "source_bvh_sha256": "5f3370e561a6d5493d58d287c24cbecc8fe18781611e7f85be1ea8f0320d08bb",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "10b7637553194652c299bbec338e027a56f7f925d03e7b5104ee9b2cdb135ffd",
+      "expected_source_bvh_sha256": "823dbe4f386a8c4a471999381a16cd0bc4d93a39907098442ccda886dcec9c95",
+      "failure_codes": [],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": false,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/run1_subject2.pkl",
+      "input_sha256": "10b7637553194652c299bbec338e027a56f7f925d03e7b5104ee9b2cdb135ffd",
+      "input_size_bytes": 2055909,
+      "motion_category": "running_jumping",
+      "motion_name": "run1_subject2",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/run1_subject2.bvh",
+      "source_bvh_sha256": "823dbe4f386a8c4a471999381a16cd0bc4d93a39907098442ccda886dcec9c95",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "32821b6e3928442a0368f2b1c14db9f00896b7c9913d6ed1c825534784c5f5e5",
+      "expected_source_bvh_sha256": "b89283da1039622161e9526d937aa4b0f5235a66a3e944ac809e49d5aef1916f",
+      "failure_codes": [
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/sprint1_subject4.pkl",
+      "input_sha256": "32821b6e3928442a0368f2b1c14db9f00896b7c9913d6ed1c825534784c5f5e5",
+      "input_size_bytes": 2360901,
+      "motion_category": "running_jumping",
+      "motion_name": "sprint1_subject4",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/sprint1_subject4.bvh",
+      "source_bvh_sha256": "b89283da1039622161e9526d937aa4b0f5235a66a3e944ac809e49d5aef1916f",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "655672b5ec3be047d7cf73aa59409d0b85de22a58f0e298b1bf59de6e79df4b2",
+      "expected_source_bvh_sha256": "4c9d591f323ffa660d9de6ef20c5d7077e66b2102a009feedf01afa22a6fbc73",
+      "failure_codes": [],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": false,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/walk1_subject1.pkl",
+      "input_sha256": "655672b5ec3be047d7cf73aa59409d0b85de22a58f0e298b1bf59de6e79df4b2",
+      "input_size_bytes": 2258949,
+      "motion_category": "standing_walking",
+      "motion_name": "walk1_subject1",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk1_subject1.bvh",
+      "source_bvh_sha256": "4c9d591f323ffa660d9de6ef20c5d7077e66b2102a009feedf01afa22a6fbc73",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "8c5082e13117b299c8dca1130555be1d268ee39c6e7c8bb6d6e22fe27f488529",
+      "expected_source_bvh_sha256": "eeab80eb5ada7811904485aea813ec9e4a0d4c890c11cabadb72e5de672ddf67",
+      "failure_codes": [
+        "SEVERE_PENETRATION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "UNDESIRED_GROUND_CONTACT",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/walk2_subject3.pkl",
+      "input_sha256": "8c5082e13117b299c8dca1130555be1d268ee39c6e7c8bb6d6e22fe27f488529",
+      "input_size_bytes": 2059077,
+      "motion_category": "standing_walking",
+      "motion_name": "walk2_subject3",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk2_subject3.bvh",
+      "source_bvh_sha256": "eeab80eb5ada7811904485aea813ec9e4a0d4c890c11cabadb72e5de672ddf67",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    },
+    {
+      "contact_policy": "feet_only",
+      "error": null,
+      "expected_pkl_sha256": "df76997e1f2994187465e0b9623457c6e852db32c56ded3bec6b47ee6647c648",
+      "expected_source_bvh_sha256": "900a3b7806b6436d99b7725cef095c82418ee8521c7f1893530d173e21ab9900",
+      "failure_codes": [
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION",
+        "SUSTAINED_SELF_COLLISION"
+      ],
+      "fidelity_enabled": true,
+      "fidelity_reason": "PKL/BVH hashes and verified replay provenance matched",
+      "fidelity_status": "enabled_verified",
+      "frame_alignment": "exact",
+      "hard_fail": true,
+      "input_path": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v1/retargeted/walk4_subject1.pkl",
+      "input_sha256": "df76997e1f2994187465e0b9623457c6e852db32c56ded3bec6b47ee6647c648",
+      "input_size_bytes": 1417413,
+      "motion_category": "standing_walking",
+      "motion_name": "walk4_subject1",
+      "plots": null,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk4_subject1.bvh",
+      "source_bvh_sha256": "900a3b7806b6436d99b7725cef095c82418ee8521c7f1893530d173e21ab9900",
+      "source_pair_status": "verified_generated_exact",
+      "status": "evaluated",
+      "warning_codes": [
+        "SOURCE_MODEL_PROVENANCE_UNAVAILABLE",
+        "CONTACT_PROXY_WITHOUT_SOURCE_LABELS",
+        "MUJOCO_CONTACT_PROXY_MISMATCH_PRESENT",
+        "SCORE_UNCALIBRATED"
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "path": "frame_metrics/dance1_subject1_step10.csv",
+      "sha256": "6d9dd7ce47f80908e2faf00528fa0a1ed7dedf6a754debbe281cdcb0338d65d3",
+      "size_bytes": 2285291
+    },
+    {
+      "path": "frame_metrics/dance2_subject2.csv",
+      "sha256": "9a20ad919732a3413dd1169532da9b15867aea913cbfc8fb427042bdff819a8d",
+      "size_bytes": 3921687
+    },
+    {
+      "path": "frame_metrics/dance2_subject5.csv",
+      "sha256": "c2361e658097829caf0366c91df138cd0806ef7ee8c8061e50d80d754f16f097",
+      "size_bytes": 3903196
+    },
+    {
+      "path": "frame_metrics/fallAndGetUp2_subject2.csv",
+      "sha256": "c0673aaad8238bdbbb07222371b07e561f612157f1c44616bb0c06a64d3c30a2",
+      "size_bytes": 3450788
+    },
+    {
+      "path": "frame_metrics/fight1_subject3.csv",
+      "sha256": "c7148c98b0bdc4b6c5329011ecc31d664107b9dab774782aa77fff9728acf7ea",
+      "size_bytes": 4172936
+    },
+    {
+      "path": "frame_metrics/ground1_subject1.csv",
+      "sha256": "7dd5b972f9e9000c56cca9917a5e5cb2e8148e0eaf22e7fb3d6458c511beecff",
+      "size_bytes": 4735592
+    },
+    {
+      "path": "frame_metrics/jumps1_subject5.csv",
+      "sha256": "4022cf5a9a7ccda57db6aa68767187c0a84753bdda04d52d3249d52dea5bd7fe",
+      "size_bytes": 4228917
+    },
+    {
+      "path": "frame_metrics/multipleActions1_subject4.csv",
+      "sha256": "99b4b54dd013310c199cd30e6784da2f3e93128b8ca138b571c2000565d381ff",
+      "size_bytes": 2700469
+    },
+    {
+      "path": "frame_metrics/obstacles3_subject3.csv",
+      "sha256": "45bbf9fe0dcbbeb7add6fde8d1440a3676b7af60cc53d1c5764a48ac04f8aca1",
+      "size_bytes": 2409263
+    },
+    {
+      "path": "frame_metrics/pushAndFall1_subject4.csv",
+      "sha256": "b32f3394fa855de20c8932e5f56f6f156fa8f47ba675dd387f15f7b0d869394d",
+      "size_bytes": 3156653
+    },
+    {
+      "path": "frame_metrics/run1_subject2.csv",
+      "sha256": "1b585ff30e89fa4b5820deb815bbf813f0040f49908cc2e20831751a949e54a2",
+      "size_bytes": 4076985
+    },
+    {
+      "path": "frame_metrics/sprint1_subject4.csv",
+      "sha256": "0a22be24eaaf3bc63d186853b9f212fff71169f961d67db8ca44282ede9ad538",
+      "size_bytes": 5309230
+    },
+    {
+      "path": "frame_metrics/walk1_subject1.csv",
+      "sha256": "64576fd24a44ddfcb67c12f70a00b37bce513188fd5e2b4c5fe5edaf239e36bc",
+      "size_bytes": 4666573
+    },
+    {
+      "path": "frame_metrics/walk2_subject3.csv",
+      "sha256": "864e15bbbf576505c1d53cc485d2abb638ff923a44dc152e4848ab56662b41f5",
+      "size_bytes": 4289371
+    },
+    {
+      "path": "frame_metrics/walk4_subject1.csv",
+      "sha256": "33e975b8f3b99f49dcf9ffdf1b792ad2dc1e9336fbe4da0486852a1973fa5d12",
+      "size_bytes": 2633958
+    },
+    {
+      "path": "quality_events.csv",
+      "sha256": "d6a2bc17b7f3f280dd061252a4d9d980a93cafc0b25464aa2b1bacc84d3588b7",
+      "size_bytes": 4740041
+    },
+    {
+      "path": "quality_summary.csv",
+      "sha256": "c4227d0c043839caca1cbf3b1519349d3b319c3d0f85640376c7097c5d87f5d7",
+      "size_bytes": 170002
+    },
+    {
+      "path": "resolved_config.yaml",
+      "sha256": "42d34f85136dffa32b5b3137b0543d3f50c679b09461700f7f5474173502e1a3",
+      "size_bytes": 3428
+    }
+  ],
+  "robot_model": {
+    "evaluated_dofs": 29,
+    "nq": 36,
+    "nv": 35,
+    "xml_path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+    "xml_sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+  },
+  "runtime": {
+    "mujoco_version": "3.11.0",
+    "platform": "Linux-5.15.0-171-generic-x86_64-with-glibc2.35",
+    "python_executable": "/root/gpufree-data/conda-envs/gmr/bin/python3.10",
+    "python_version": "3.10.20"
+  },
+  "schema_version": 1,
+  "tool": {
+    "git": {
+      "change_count": null,
+      "commit": null,
+      "dirty": null,
+      "repository_root": null,
+      "requested_path": "/root/gpufree-data/retargeting_quality_assessment"
+    },
+    "name": "gmr-quality-eval",
+    "version": "0.1.0"
+  }
+}

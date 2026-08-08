@@ -1,0 +1,17 @@
+{
+  "case_id": "C04",
+  "case_type": "self_collision_nonhand",
+  "contact_policy": "feet_only",
+  "entities": "[\"left_elbow_link\",\"left_hip_yaw_link\"]",
+  "event_duration_s": 2.833333333333333,
+  "event_end_frame": 5486,
+  "event_start_frame": 5402,
+  "max_severity": 0.0775113986526036,
+  "motion_category": "standing_walking",
+  "motion_name": "walk2_subject3",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/walk2_subject3.pkl",
+  "pose_frames": "[5372,5408,5444,5480,5516]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 5516,
+  "window_start_frame": 5372
+}

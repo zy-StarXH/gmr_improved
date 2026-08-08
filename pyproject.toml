@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gmr-improved"
+version = "0.1.0"
+description = "Reproducible failure analysis and constraint-aware extensions for GMR"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.8",
+  "mujoco>=3.2",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "PyYAML>=6.0",
+  "scipy>=1.11",
+]
+
+[project.scripts]
+gmr-improved = "gmr_improved.cli:main"
+temporal-gmr = "gmr_improved.temporal_cli:main"
+temporal-gmr-compare = "gmr_improved.temporal_compare_cli:main"
+temporal-gmr-audit = "gmr_improved.temporal_audit_cli:main"
+temporal-gmr-heldout = "gmr_improved.heldout_cli:main"
+temporal-gmr-heldout-compare = "gmr_improved.heldout_compare_cli:main"
+temporal-gmr-heldout-audit = "gmr_improved.heldout_audit_cli:main"
+temporal-gmr-heldout-visualize = "gmr_improved.heldout_visualization_cli:main"
+temporal-gmr-heldout-visualize-v2 = "gmr_improved.heldout_visualization_v2_cli:main"
+temporal-gmr-heldout-visualize-v3 = "gmr_improved.heldout_visualization_v3_cli:main"
+temporal-gmr-i0-finalize = "gmr_improved.i0_delivery_cli:main"
+collision-gmr-prepare-model = "gmr_improved.collision_model_cli:main"
+collision-gmr = "gmr_improved.collision_cli:main"
+collision-gmr-compare = "gmr_improved.collision_compare_cli:main"
+collision-gmr-event-audit = "gmr_improved.collision_event_audit_cli:main"
+collision-gmr-geometry-audit = "gmr_improved.collision_geometry_audit_cli:main"
+gmr-viewer-compat = "gmr_improved.viewer_compat_cli:main"
+collision-gmr-i1-finalize = "gmr_improved.i1_delivery_cli:main"
+contact-gmr-input-audit = "gmr_improved.contact_input_audit_cli:main"
+contact-gmr = "gmr_improved.contact_cli:main"
+contact-gmr-compare = "gmr_improved.contact_compare_cli:main"
+contact-gmr-audit = "gmr_improved.contact_audit_cli:main"
+contact-gmr-i2-finalize = "gmr_improved.i2_delivery_cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

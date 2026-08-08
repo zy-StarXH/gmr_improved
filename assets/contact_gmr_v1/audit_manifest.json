@@ -1,0 +1,15 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "contact_input_audit.json",
+      "sha256": "9cfc9b1cadb40732a0e8ab2a24d2d45a60f7be631e2f4f85bbbb0b5e59a7c779",
+      "size_bytes": 1945
+    },
+    {
+      "path": "source_contact_metrics.csv",
+      "sha256": "20c548e025228a854f7f584f79b33e221f033cbc1b60cdc2fb6632bcc2d04c00",
+      "size_bytes": 3952
+    }
+  ]
+}

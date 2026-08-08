@@ -1,0 +1,95 @@
+schema_version: 1
+project:
+  name: gmr_step3_failure_analysis
+  robot_name: unitree_g1
+
+paths:
+  catalog: /root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv
+  evaluation_dir: /root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation
+  quality_summary: /root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_summary.csv
+  quality_events: /root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_events.csv
+  evaluator_config: /root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml
+  gmr_root: /root/gpufree-data/GMR
+  gmr_core: /root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py
+  ik_config: /root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json
+  robot_xml: /root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml
+
+expected:
+  motion_count: 15
+  total_frames: 90540
+  fps: 30.0
+  strata:
+    complex_dynamic: 3
+    dance: 3
+    floor_motion: 3
+    running_jumping: 3
+    standing_walking: 3
+  source_pair_status: verified_generated_exact
+  gmr_commit: bb1bbe40774794fceb2a7c579a3464a28e68c844
+  sha256:
+    catalog: 80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3
+    quality_summary: 07f6768fee7caf7de1d8dccbef8d14e501b521edebd84a12906641a9cc53eb89
+    quality_events: 8c87732a027da9b468040b073cbb84bca0c5f648068dcd791c5db7bac328b6fe
+    evaluator_config: f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882
+    gmr_core: 3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663
+    ik_config: cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320
+    robot_xml: 85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8
+
+analysis:
+  metrics:
+    - name: joint_jump
+      frame_flag: joint_jump_flag
+      summary_rate: joint_jump_rate
+      event_type: JOINT_JUMP
+      excluded_leading_frames_from_rate: 1
+    - name: velocity_violation
+      frame_flag: velocity_violation_flag
+      summary_rate: velocity_violation_frame_rate
+      event_type: VELOCITY_LIMIT_EXCEEDED
+      excluded_leading_frames_from_rate: 1
+    - name: near_limit_2pct
+      frame_flag: near_limit_2pct_flag
+      summary_rate: near_limit_2pct_frame_rate
+      event_type: NEAR_JOINT_LIMIT_2PCT
+      excluded_leading_frames_from_rate: 0
+    - name: self_collision_nonhand
+      frame_flag: self_collision_nonhand_flag
+      summary_rate: self_collision_nonhand_frame_rate
+      event_type: SELF_COLLISION_NONHAND
+      excluded_leading_frames_from_rate: 0
+    - name: ground_penetration
+      frame_flag: penetration_flag
+      summary_rate: ground_penetration_frame_rate
+      event_type: GROUND_PENETRATION
+      excluded_leading_frames_from_rate: 0
+    - name: severe_ground_penetration
+      frame_flag: severe_penetration_flag
+      event_type: null
+      excluded_leading_frames_from_rate: 0
+    - name: undesired_ground_contact
+      frame_flag: undesired_ground_contact_flag
+      summary_rate: undesired_ground_contact_frame_rate
+      event_type: UNDESIRED_GROUND_CONTACT
+      excluded_leading_frames_from_rate: 0
+    - name: foot_slide
+      frame_flag_any:
+        - left_foot_slide_flag
+        - right_foot_slide_flag
+      summary_rate: foot_slide_frame_rate
+      event_type: FOOT_SLIDE
+      excluded_leading_frames_from_rate: 0
+  window_padding_s: 1.0
+  pose_frames_per_window: 5
+  case_counts:
+    self_collision_nonhand: 4
+    ground_penetration: 3
+    joint_jump: 3
+  controls:
+    - walk1_subject1
+    - jumps1_subject5
+
+research_boundary:
+  use_quality_score: false
+  inferential_use_allowed: false
+  static_fk_proves_dynamics: false
+  score_is_calibrated: false

@@ -1,0 +1,17 @@
+{
+  "case_id": "C09",
+  "case_type": "joint_jump",
+  "contact_policy": "floor_motion",
+  "entities": "[\"right_wrist_pitch_joint\"]",
+  "event_duration_s": 0.0333333333333333,
+  "event_end_frame": 4429,
+  "event_start_frame": 4429,
+  "max_severity": 2.150604439162142,
+  "motion_category": "floor_motion",
+  "motion_name": "pushAndFall1_subject4",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/pushAndFall1_subject4.pkl",
+  "pose_frames": "[4399,4414,4429,4444,4459]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 4459,
+  "window_start_frame": 4399
+}

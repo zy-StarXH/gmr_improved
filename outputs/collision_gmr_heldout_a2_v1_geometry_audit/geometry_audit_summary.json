@@ -1,0 +1,91 @@
+{
+  "audited_geom_pair_count": 362,
+  "frame_count": 91627,
+  "inputs": {
+    "a1_dir": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_v1/retargeted",
+    "a2_dir": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_heldout_a2_v1/retargeted",
+    "collision_pairs_csv": {
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_pairs.csv",
+      "sha256": "bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff"
+    },
+    "derived_xml": {
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml",
+      "sha256": "02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff"
+    }
+  },
+  "interpretation_boundary": "Signed distances are queried only for the preregistered 362 geom pairs. This is independent of MuJoCo contact-event aggregation and does not cover excluded hands or body-tree distance below three.",
+  "minimum_pair_distance_m": {
+    "a1": -0.08814210106328041,
+    "a2": -0.04161645341170499
+  },
+  "motion_count": 15,
+  "parameters": {
+    "bound_relaxation": 0.0,
+    "broadphase": true,
+    "detection_distance_m": 0.02,
+    "enabled": true,
+    "expected_pair_count": 362,
+    "gain": 0.85,
+    "hand_patterns": [
+      "left_wrist",
+      "right_wrist",
+      "left_rubber_hand",
+      "right_rubber_hand"
+    ],
+    "minimum_distance_m": 0.005,
+    "minimum_tree_distance": 3
+  },
+  "schema_version": 1,
+  "totals": {
+    "active_frame_count": {
+      "a1": 5436,
+      "a2": 5432,
+      "delta": -4
+    },
+    "active_pair_frame_count": {
+      "a1": 8384,
+      "a2": 7686,
+      "delta": -698
+    },
+    "below_minimum_frame_count": {
+      "a1": 2184,
+      "a2": 2047,
+      "delta": -137
+    },
+    "below_minimum_frame_rate": {
+      "a1": 0.023835768932738168,
+      "a2": 0.022340576467635084,
+      "delta": -0.001495192465103081
+    },
+    "below_minimum_pair_event_count": {
+      "a1": 722,
+      "a2": 692,
+      "delta": -30
+    },
+    "below_minimum_pair_frame_count": {
+      "a1": 3203,
+      "a2": 2477,
+      "delta": -726
+    },
+    "penetrating_frame_count": {
+      "a1": 1183,
+      "a2": 677,
+      "delta": -506
+    },
+    "penetrating_frame_rate": {
+      "a1": 0.012911041505233173,
+      "a2": 0.007388651816604276,
+      "delta": -0.005522389688628898
+    },
+    "penetrating_pair_event_count": {
+      "a1": 399,
+      "a2": 340,
+      "delta": -59
+    },
+    "penetrating_pair_frame_count": {
+      "a1": 1943,
+      "a2": 793,
+      "delta": -1150
+    }
+  }
+}

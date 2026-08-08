@@ -1,0 +1,90 @@
+{
+  "catalog": {
+    "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_smoke_v2/temporal_motion_catalog.csv",
+    "sha256": "85f140e20b1587416f41750e5df0651153a9bd2f5fb2723e720eb9a48c5e5cd6"
+  },
+  "cohort": {
+    "max_frames_per_motion": 120,
+    "motion_count": 1,
+    "requested_motions": [
+      "walk1_subject1"
+    ],
+    "source_catalog": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+    "source_catalog_sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3",
+    "total_frames": 120
+  },
+  "complete": true,
+  "elapsed_seconds": 4.710462410002947,
+  "experiment": "I0_temporal_gmr_development",
+  "formal_development_run": false,
+  "frozen_artifacts": [
+    {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py",
+      "sha256": "3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663"
+    },
+    {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py",
+      "sha256": "3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c"
+    },
+    {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320"
+    },
+    {
+      "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+      "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+    }
+  ],
+  "gmr": {
+    "change_count": 3,
+    "commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "damping": 0.5,
+    "dirty": true,
+    "internal_timestep_s": 0.002,
+    "repository_root": "/root/gpufree-data/GMR",
+    "solver": "daqp",
+    "upstream_use_velocity_limit": false
+  },
+  "implementation_sources": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py",
+      "sha256": "e469d19662398934ff024c46adaf85ab4f5cdbda7f6fca1b27c4d34e66d744e2"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    }
+  ],
+  "inputs": [
+    {
+      "contact_policy": "feet_only",
+      "diagnostic_csv": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_smoke_v2/diagnostics/walk1_subject1.csv",
+      "diagnostic_csv_sha256": "64f5fbe5ddcecccc94a1f1b249c936d674e1907bf2c9c9cb6bed92a783d54661",
+      "max_observed_joint_velocity_rad_s": 9.424777960769376,
+      "max_observed_trust_region_ratio": 0.9999999999999997,
+      "motion_category": "standing_walking",
+      "motion_name": "walk1_subject1",
+      "output_frame_count": 120,
+      "output_pkl": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_smoke_v2/retargeted/walk1_subject1.pkl",
+      "output_pkl_sha256": "58bd3f4bb1ac5b9b5f845aaa0bfaec10cf659cf794ac8eaf1e3e0b62657ba8c5",
+      "retarget_seconds": 0.407546853646636,
+      "serialization_roundtrip_exact": true,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk1_subject1.bvh",
+      "source_bvh_sha256": "4c9d591f323ffa660d9de6ef20c5d7077e66b2102a009feedf01afa22a6fbc73",
+      "source_fps": 30.000300003000028,
+      "source_frame_count": 7840,
+      "trust_region_bound_satisfied": true
+    }
+  ],
+  "intervention": {
+    "enabled": true,
+    "max_joint_velocity_rad_s": 9.42477796076938,
+    "output_fps": 30.0,
+    "previous_posture_cost": 1.0,
+    "soft_limit_cost": 10.0,
+    "soft_limit_margin_fraction": 0.03,
+    "soft_limit_min_margin_rad": 0.0,
+    "trust_region_tolerance_rad": 1e-07
+  },
+  "schema_version": 1
+}

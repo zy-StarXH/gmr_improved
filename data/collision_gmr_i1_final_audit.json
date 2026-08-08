@@ -1,0 +1,23 @@
+{
+  "artifact_count_verified": 37,
+  "delivery_manifest": {
+    "path": "/root/gpufree-data/gmr_improved/I1_FINAL_DELIVERY_MANIFEST.json",
+    "sha256": "54a469d45d579db82c4a577fe4e6c438e70485caf41712bff33a53625171e65c",
+    "size_bytes": 7929
+  },
+  "mismatch_count": 0,
+  "mismatches": [],
+  "nested_i1_validation": {
+    "development_gate_pass": true,
+    "heldout_frame_count": 91627,
+    "heldout_gate_pass": true,
+    "heldout_motion_count": 15,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "ok": true,
+    "remaining_penetrating_frames": 677,
+    "uncalibrated_quality_score_used": false
+  },
+  "ok": true,
+  "schema_version": 1
+}

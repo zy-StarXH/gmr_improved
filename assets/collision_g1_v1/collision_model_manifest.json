@@ -1,0 +1,36 @@
+{
+  "complete": true,
+  "created_at_utc": "2026-08-06T02:32:42.067522+00:00",
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_model.py",
+    "sha256": "9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e"
+  },
+  "outputs": [
+    {
+      "path": "g1_mocap_29dof_collision_named.xml",
+      "sha256": "02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff",
+      "size_bytes": 30031
+    },
+    {
+      "path": "collision_pairs.csv",
+      "sha256": "bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff",
+      "size_bytes": 52081
+    },
+    {
+      "path": "geom_name_map.csv",
+      "sha256": "668cf7728bda4d0eb64fa55014920be24a29207d378232a773008179f41b925e",
+      "size_bytes": 3948
+    },
+    {
+      "path": "collision_model_audit.json",
+      "sha256": "ac48303565d8e373dcbc31a1fc9001ed8f4f749e3e624db22bf049b77c87df27",
+      "size_bytes": 1935
+    }
+  ],
+  "schema_version": 1,
+  "source_xml": {
+    "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+    "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+  },
+  "stage": "I1_collision_model_and_pair_audit"
+}

@@ -1,0 +1,57 @@
+schema_version: 1
+
+experiment:
+  name: I0_temporal_gmr_heldout
+  status: frozen_before_outputs
+  motion_count: 15
+  total_frames: 91627
+  categories: 5
+  motions_per_category: 3
+
+paths:
+  gmr_root: /root/gpufree-data/GMR
+  gmr_motion_retarget: /root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py
+  gmr_lafan1_loader: /root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py
+  gmr_ik_config: /root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json
+  robot_xml: /root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml
+  source_catalog: /root/gpufree-data/gmr_improved/data/temporal_gmr_heldout_sources.csv
+  frozen_temporal_config: /root/gpufree-data/gmr_improved/configs/temporal_gmr_v2.yaml
+  frozen_temporal_implementation: /root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py
+  quality_config: /root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml
+
+frozen_hashes:
+  gmr_commit: bb1bbe40774794fceb2a7c579a3464a28e68c844
+  gmr_motion_retarget_sha256: 3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663
+  gmr_lafan1_loader_sha256: 3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c
+  gmr_ik_config_sha256: cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320
+  robot_xml_sha256: 85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8
+  source_catalog_sha256: 35e5523c9f798a90745cbb6c92daa2785793f2a630a9775aef87bdd6f4900b03
+  frozen_temporal_config_sha256: 4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5
+  frozen_temporal_implementation_sha256: c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0
+  quality_config_sha256: f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882
+
+gmr:
+  solver: daqp
+  damping: 0.5
+  output_fps: 30.0
+
+temporal_gmr:
+  output_fps: 30.0
+  max_joint_velocity_rad_s: 9.41535318280861
+  previous_posture_cost: 1.0
+  soft_limit_cost: 10.0
+  soft_limit_margin_fraction: 0.03
+  soft_limit_min_margin_rad: 0.0
+  trust_region_tolerance_rad: 0.0000001
+  enabled: true
+
+acceptance:
+  strict_improvement_metrics:
+    - joint_jump_rate
+    - velocity_violation_frame_rate
+    - near_limit_2pct_frame_rate
+  no_new_hard_fail: true
+  maximum_overall_fidelity_pass_rate_decline: 0.02
+  ignore_uncalibrated_quality_score: true
+  bootstrap_resamples: 10000
+  bootstrap_seed: 20260805

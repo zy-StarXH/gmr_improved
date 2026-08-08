@@ -1,0 +1,17 @@
+{
+  "case_id": "C10",
+  "case_type": "joint_jump",
+  "contact_policy": "feet_only",
+  "entities": "[\"left_wrist_roll_joint\"]",
+  "event_duration_s": 0.0333333333333333,
+  "event_end_frame": 4943,
+  "event_start_frame": 4943,
+  "max_severity": 1.875813566264661,
+  "motion_category": "dance",
+  "motion_name": "dance2_subject2",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/dance2_subject2.pkl",
+  "pose_frames": "[4913,4928,4943,4958,4973]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 4973,
+  "window_start_frame": 4913
+}

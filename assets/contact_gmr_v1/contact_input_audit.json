@@ -1,0 +1,52 @@
+{
+  "frame_count": 90540,
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/contact_input_audit.py",
+    "sha256": "6b442b30fb37b7d5e21f5e14d2fb7997c8049e53cacee1a6f6be7cdb2c52e0f6"
+  },
+  "inputs": {
+    "catalog": {
+      "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+      "sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3"
+    }
+  },
+  "interpretation_boundary": "This audit uses only source BVH foot positions and preregistered thresholds. It is not evidence that robot contacts or Contact-GMR outputs improved.",
+  "motion_count": 15,
+  "ok": true,
+  "parameters": {
+    "anchor_xy_cost": 100.0,
+    "anchor_z_cost": 50.0,
+    "enable_feet_only_anchors": true,
+    "enable_feet_only_root_lift": true,
+    "enable_floor_motion_anchors": false,
+    "enable_floor_motion_root_lift": false,
+    "enabled": true,
+    "enter_height_m": 0.04,
+    "enter_horizontal_speed_m_s": 0.2,
+    "enter_vertical_speed_m_s": 0.2,
+    "exit_height_m": 0.06,
+    "exit_horizontal_speed_m_s": 0.4,
+    "exit_vertical_speed_m_s": 0.4,
+    "expected_sole_geom_count_per_foot": 4,
+    "ground_percentile": 2.0,
+    "human_left_foot_name": "LeftFootMod",
+    "human_right_foot_name": "RightFootMod",
+    "left_foot_body": "left_ankle_roll_link",
+    "max_root_lift_m": 0.05,
+    "max_root_lift_release_per_frame_m": 0.005,
+    "max_root_lift_rise_per_frame_m": 0.02,
+    "right_foot_body": "right_ankle_roll_link",
+    "sole_clearance_m": 0.002,
+    "sole_sphere_max_radius_m": 0.01,
+    "target_max_ground_penetration_m": 0.005
+  },
+  "policy_audit": {
+    "feet_only_any_contact_frame_count": 58647,
+    "feet_only_any_contact_frame_rate": 0.7724740190461137,
+    "feet_only_motion_count": 12,
+    "floor_motion_any_contact_frame_count": 0,
+    "floor_motion_count": 3,
+    "floor_motion_semantic_noop": true
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,76 @@
+{
+  "a1": {
+    "event_count": {
+      "audited": 379,
+      "not_audited": 163,
+      "total": 542
+    },
+    "event_frame_instance_count": {
+      "audited": 1856,
+      "not_audited": 884,
+      "total": 2740
+    },
+    "unique_body_pair_count": 40,
+    "unique_motion_frame_count": {
+      "any": 1829,
+      "audited": 1183,
+      "not_audited": 874,
+      "overlap": 228
+    }
+  },
+  "a2": {
+    "event_count": {
+      "audited": 332,
+      "not_audited": 156,
+      "total": 488
+    },
+    "event_frame_instance_count": {
+      "audited": 783,
+      "not_audited": 755,
+      "total": 1538
+    },
+    "unique_body_pair_count": 34,
+    "unique_motion_frame_count": {
+      "any": 1345,
+      "audited": 677,
+      "not_audited": 751,
+      "overlap": 83
+    }
+  },
+  "audited_body_pair_count": 193,
+  "delta": {
+    "event_count": {
+      "audited": -47,
+      "not_audited": -7,
+      "total": -54
+    },
+    "event_frame_instance_count": {
+      "audited": -1073,
+      "not_audited": -129,
+      "total": -1202
+    },
+    "unique_motion_frame_count": {
+      "any": -484,
+      "audited": -506,
+      "not_audited": -123,
+      "overlap": -145
+    }
+  },
+  "event_type": "SELF_COLLISION_NONHAND",
+  "inputs": {
+    "a1_events_csv": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_quality_v1/quality_events.csv",
+      "sha256": "b0aa69092870c8a5e173fd5e9fa777c744bead14fd18ae88370bdfc49e6a9f64"
+    },
+    "a2_events_csv": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_heldout_a2_v1_quality/quality_events.csv",
+      "sha256": "cc375731ea901dfd5b2d8243fcbced99c97799e13c3624fe79f125ac3e971837"
+    },
+    "collision_pairs_csv": {
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_pairs.csv",
+      "sha256": "bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff"
+    }
+  },
+  "interpretation_boundary": "Coverage is defined at body-pair level: at least one frozen geom pair exists for the event body pair. Unique-frame counts within coverage groups can overlap when two body pairs contact in the same motion frame.",
+  "schema_version": 1
+}

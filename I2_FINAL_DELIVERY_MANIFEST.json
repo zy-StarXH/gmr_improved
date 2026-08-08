@@ -1,0 +1,257 @@
+{
+  "artifact_count": 46,
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "ca35257d49e376e8fb71513e1b44df9494130bbb79108f268ccd55af90e10fcd",
+      "size_bytes": 2736
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "4a881a0bb267b5ca7ccb03c4dc909e56eb96aff4554df8d91a231936fbc1bf7c",
+      "size_bytes": 2029
+    },
+    {
+      "path": "configs/contact_gmr_v1.yaml",
+      "sha256": "679d6d35039d67826dfea05e87cc96b8692789d29103e751862cc94403330779",
+      "size_bytes": 6614
+    },
+    {
+      "path": "configs/contact_gmr_v2.yaml",
+      "sha256": "b16d9b042682b092691366b32ff36047c04cfd50e76225e22199a965b397cb56",
+      "size_bytes": 6708
+    },
+    {
+      "path": "configs/contact_gmr_heldout_v2.yaml",
+      "sha256": "5faeb5ab565d82b647a1491e2db1924e96df57c6d91d0404033f11ac61f837b9",
+      "size_bytes": 6636
+    },
+    {
+      "path": "assets/contact_gmr_v1/contact_input_audit.json",
+      "sha256": "9cfc9b1cadb40732a0e8ab2a24d2d45a60f7be631e2f4f85bbbb0b5e59a7c779",
+      "size_bytes": 1945
+    },
+    {
+      "path": "assets/contact_gmr_v1/source_contact_metrics.csv",
+      "sha256": "20c548e025228a854f7f584f79b33e221f033cbc1b60cdc2fb6632bcc2d04c00",
+      "size_bytes": 3952
+    },
+    {
+      "path": "assets/contact_gmr_v2/contact_input_audit.json",
+      "sha256": "af13a4462343f2507c942b9b9d2bfa1ccc0a25e1fc903999878b3befd57d89d8",
+      "size_bytes": 1944
+    },
+    {
+      "path": "assets/contact_gmr_v2/source_contact_metrics.csv",
+      "sha256": "20c548e025228a854f7f584f79b33e221f033cbc1b60cdc2fb6632bcc2d04c00",
+      "size_bytes": 3952
+    },
+    {
+      "path": "assets/contact_gmr_heldout_v2/contact_input_audit.json",
+      "sha256": "6ac0c9334b771c227832652131f41f74a530060780119fd66d9cf1ff8cecf9e7",
+      "size_bytes": 1942
+    },
+    {
+      "path": "assets/contact_gmr_heldout_v2/source_contact_metrics.csv",
+      "sha256": "551aa58ddf8cf01a39f2483e535f37bf769986088aa94dcd6dc00a5d577129b6",
+      "size_bytes": 3938
+    },
+    {
+      "path": "reports/CONTACT_GMR_V1_DEVELOPMENT_REPORT.md",
+      "sha256": "d4ac5d4c6cbcd4aa77dd5088e0034ababc69145a5b3ef27d7ad923f82c4a0b32",
+      "size_bytes": 5587
+    },
+    {
+      "path": "reports/CONTACT_GMR_I2_FINAL_REPORT.md",
+      "sha256": "df30ca9809c2db74a7db29e38dc7a1594324d3eedf2a8b5fd8a323db05304bb8",
+      "size_bytes": 7888
+    },
+    {
+      "path": "src/gmr_improved/contact.py",
+      "sha256": "8c57d5e13def9661840a1281cea2202324dc486fc7481e4a62046adec6e32e15",
+      "size_bytes": 20348
+    },
+    {
+      "path": "src/gmr_improved/contact_input_audit.py",
+      "sha256": "6b442b30fb37b7d5e21f5e14d2fb7997c8049e53cacee1a6f6be7cdb2c52e0f6",
+      "size_bytes": 5592
+    },
+    {
+      "path": "src/gmr_improved/contact_experiment.py",
+      "sha256": "2b65a0d88e6f456e4cb180b9b2a22ef75d64b035a1f635c7eef744a3f7899ed5",
+      "size_bytes": 22580
+    },
+    {
+      "path": "src/gmr_improved/contact_cli.py",
+      "sha256": "8ed9077c59efff73607a1ee27336e2ada9ab315cac860f4c26407eb25532fd54",
+      "size_bytes": 1457
+    },
+    {
+      "path": "src/gmr_improved/contact_compare.py",
+      "sha256": "f0ebc6340e35cd41b0e4c385db7dfa88335d1b649dd1d25d40a9cdd360c2d92a",
+      "size_bytes": 15392
+    },
+    {
+      "path": "src/gmr_improved/contact_compare_cli.py",
+      "sha256": "930ea4b015f1de953bad708bbca350b47c66071e9c19cb0dbe66043c9651b8b3",
+      "size_bytes": 973
+    },
+    {
+      "path": "src/gmr_improved/contact_audit.py",
+      "sha256": "3a28505e63e776d3604fccae81ff9ee97044a0421af5c38f00bc993d50ef04a2",
+      "size_bytes": 15312
+    },
+    {
+      "path": "src/gmr_improved/contact_audit_cli.py",
+      "sha256": "e8a0773029fff9e6010189e5579bafd3b0fa3069572ed4404ef3e754bbebe2c1",
+      "size_bytes": 1492
+    },
+    {
+      "path": "src/gmr_improved/viewer_compat.py",
+      "sha256": "bb7e53ffafe04b522c82ff05c6058f569f11759b3c721bd89f5d90ff7ac0c7f0",
+      "size_bytes": 2113
+    },
+    {
+      "path": "src/gmr_improved/i2_delivery.py",
+      "sha256": "61cd80a3d93e17f4cba4fcc7af029434148f5464eef4ffbc56a214553e9aa30f",
+      "size_bytes": 11825
+    },
+    {
+      "path": "outputs/contact_gmr_development_v1/run_manifest.json",
+      "sha256": "9d3b3445ff014c3a9a86f37cf51ab2eedcfd41edce502a825d369b22197a4728",
+      "size_bytes": 32660
+    },
+    {
+      "path": "outputs/contact_gmr_development_v1_quality/run_manifest.json",
+      "sha256": "5e3acd369fcb3838548661a99810f8714dec497db196fdced69dc75948374d53",
+      "size_bytes": 34472
+    },
+    {
+      "path": "outputs/contact_gmr_development_v1_comparison/comparison_manifest.json",
+      "sha256": "cad21e47f185bb2df85c9ebec68ea02d9a3ead9fbaca678c4b8211bcdb0fbe52",
+      "size_bytes": 891
+    },
+    {
+      "path": "outputs/contact_gmr_development_v1_comparison/comparison_summary.json",
+      "sha256": "782873a08be2696bc046635fcde71c92b27861cad8ba49fdb59ee968f22b5cb8",
+      "size_bytes": 20468
+    },
+    {
+      "path": "data/contact_gmr_development_v1_audit.json",
+      "sha256": "8f6390ffc4686971bff33c8ec00d2c157aa351861aef5f56620e151e5b342812",
+      "size_bytes": 2194
+    },
+    {
+      "path": "outputs/contact_gmr_development_v2/run_manifest.json",
+      "sha256": "c91789a44ded9b9b673284d9dd4b821508336f37ae374c8fa97feea84eaabfee",
+      "size_bytes": 32673
+    },
+    {
+      "path": "outputs/contact_gmr_development_v2_quality/run_manifest.json",
+      "sha256": "ad01e35d4b260cb0bff0facb54c420c89462a20a089ca11c02d45266cf5c9e23",
+      "size_bytes": 33999
+    },
+    {
+      "path": "outputs/contact_gmr_development_v2_comparison/comparison_manifest.json",
+      "sha256": "4dee19aa8bf21ecc6eca6dccaa9688d9b373a1f9cb82cb81b0bba7c0888e6277",
+      "size_bytes": 891
+    },
+    {
+      "path": "outputs/contact_gmr_development_v2_comparison/comparison_summary.json",
+      "sha256": "d8e4e3b1e7a9f70f3a2945d142c0c3da7634bd8751980bd586d746b6e7ea96c5",
+      "size_bytes": 20476
+    },
+    {
+      "path": "outputs/contact_gmr_development_v2_comparison/paired_motion_metrics.csv",
+      "sha256": "4aa1802927eadb3a90209b06173924d136d4f9cc8b73ad0be095364af0dc4a0a",
+      "size_bytes": 29336
+    },
+    {
+      "path": "outputs/contact_gmr_development_v2_comparison/policy_metrics.csv",
+      "sha256": "24e4070fd3bf7c5fe01c24da763337d62ecbb023d24e424f97c2d297b452ce8e",
+      "size_bytes": 11164
+    },
+    {
+      "path": "data/contact_gmr_development_v2_audit.json",
+      "sha256": "b50e7e8711abf3ba3079a68ec51d0f986d6aeadd9e028dc709aebdeeb36a946e",
+      "size_bytes": 2196
+    },
+    {
+      "path": "outputs/contact_gmr_heldout_v2/run_manifest.json",
+      "sha256": "adf11ace90bd35a7de6d1ab1585dcff65e9fa7ff9534d65e72b66d5f5100ec56",
+      "size_bytes": 32467
+    },
+    {
+      "path": "outputs/contact_gmr_heldout_v2_quality/run_manifest.json",
+      "sha256": "97728ba593ae0b09f697dcb8bc132e796744f4d74f93152f8be2e83db42b833e",
+      "size_bytes": 38747
+    },
+    {
+      "path": "outputs/contact_gmr_heldout_v2_comparison/comparison_manifest.json",
+      "sha256": "730a4f131bfde18af9e2850251893230a9983ae637811cc4c72967fbc29fc977",
+      "size_bytes": 891
+    },
+    {
+      "path": "outputs/contact_gmr_heldout_v2_comparison/comparison_summary.json",
+      "sha256": "579875be9a8ad805acf0bfae6b10f4d65a4ef00d9f8dd80fce402f5015e249b8",
+      "size_bytes": 20496
+    },
+    {
+      "path": "outputs/contact_gmr_heldout_v2_comparison/paired_motion_metrics.csv",
+      "sha256": "97e813355b9ca88011c121c9203925e5ec13707698cdf9c0077e43273cdbca3e",
+      "size_bytes": 29478
+    },
+    {
+      "path": "outputs/contact_gmr_heldout_v2_comparison/policy_metrics.csv",
+      "sha256": "5e40bd9e63b24e2a8438e642b673e65aeaceb17c008297c44e50a4f8af595cd7",
+      "size_bytes": 11190
+    },
+    {
+      "path": "data/contact_gmr_heldout_v2_audit.json",
+      "sha256": "bcee3c1b00f97067cddc1db3ae63223e4fcde2a74b9535294f2a454c6901ee2e",
+      "size_bytes": 2181
+    },
+    {
+      "path": "outputs/visualization_compat/walk3_subject3_a2_collision_v1.pkl",
+      "sha256": "79a02357e85cf9ba69f72963169b5f958b1cd86d7906df4c5641a811d8990d51",
+      "size_bytes": 2131909
+    },
+    {
+      "path": "outputs/visualization_compat/walk3_subject3_a3_contact_v2.pkl",
+      "sha256": "71f5d6d1e05bd3057ffd956d0f174d620b6a494dbbd07048ffc76373bee70028",
+      "size_bytes": 2131909
+    },
+    {
+      "path": "outputs/visualization_compat/dance1_subject2_a2_collision_for_contact.pkl",
+      "sha256": "22396d4deb82da084e6ba007c48c6461fd7e53adf9e3f00fe9815f7769d42de8",
+      "size_bytes": 1137157
+    },
+    {
+      "path": "outputs/visualization_compat/dance1_subject2_a3_contact_v2.pkl",
+      "sha256": "8ebd3775ad157da40fd332a724166e1ca69aadffe6cca36b1cfdb114a92eb7ed",
+      "size_bytes": 1137157
+    }
+  ],
+  "created_at_utc": "2026-08-06T09:27:42.981241+00:00",
+  "notes": [
+    "PLAN.md is excluded because it records this manifest hash after creation.",
+    "The final audit file is excluded to avoid self-reference.",
+    "The failed v1 development result and the held-out residual penetration/root-jerk negative results are mandatory delivery evidence."
+  ],
+  "schema_version": 1,
+  "stage": "I2_Contact_GMR",
+  "status": "completed",
+  "validation": {
+    "heldout_frame_count": 91627,
+    "heldout_motion_count": 15,
+    "heldout_residual_max_penetration_m": 0.07078016830085283,
+    "heldout_root_jerk_p95_delta_m_s3": 24.691188969626467,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "ok": true,
+    "uncalibrated_quality_score_used": false,
+    "v1_development_gate_pass": false,
+    "v2_development_gate_pass": true,
+    "v2_heldout_gate_pass": true
+  }
+}

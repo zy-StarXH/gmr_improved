@@ -1,0 +1,191 @@
+{
+  "catalog": {
+    "path": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_smoke_v1/collision_motion_catalog.csv",
+    "sha256": "1138cdd6c49b665e2892427663f085b22330d332f98426dc4c7952a74e542928"
+  },
+  "cohort": {
+    "max_frames_per_motion": 120,
+    "motion_count": 1,
+    "requested_motions": [
+      "walk1_subject1"
+    ],
+    "source_catalog": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+    "source_catalog_sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3",
+    "total_frames": 120
+  },
+  "complete": true,
+  "elapsed_seconds": 5.169201904907823,
+  "experiment": "I1_collision_gmr_development",
+  "experiment_config": {
+    "path": "/root/gpufree-data/gmr_improved/configs/collision_gmr_v1.yaml",
+    "sha256": "520f82b80fbd96c1bbcdc8e2881db5e9bd435e35c19b1e95cac1f7be2ec3444a"
+  },
+  "formal_development_run": false,
+  "frozen_artifacts": [
+    {
+      "label": "development catalog",
+      "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+      "sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3"
+    },
+    {
+      "label": "GMR implementation",
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py",
+      "sha256": "3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663"
+    },
+    {
+      "label": "LAFAN1 loader",
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py",
+      "sha256": "3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c"
+    },
+    {
+      "label": "IK config",
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320"
+    },
+    {
+      "label": "original robot XML",
+      "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+      "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+    },
+    {
+      "label": "derived robot XML",
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml",
+      "sha256": "02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff"
+    },
+    {
+      "label": "collision pair CSV",
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_pairs.csv",
+      "sha256": "bbac0b68e7e69fe218e310eecc6a0dafa61aba3ae7bbdf15c5ce6fe569d971ff"
+    },
+    {
+      "label": "collision model audit",
+      "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/collision_model_audit.json",
+      "sha256": "ac48303565d8e373dcbc31a1fc9001ed8f4f749e3e624db22bf049b77c87df27"
+    },
+    {
+      "label": "Temporal-GMR implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    },
+    {
+      "label": "Temporal-GMR experiment implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py",
+      "sha256": "bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746"
+    },
+    {
+      "label": "Temporal-GMR v2 config",
+      "path": "/root/gpufree-data/gmr_improved/configs/temporal_gmr_v2.yaml",
+      "sha256": "4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5"
+    },
+    {
+      "label": "collision implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision.py",
+      "sha256": "04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40"
+    },
+    {
+      "label": "collision model implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_model.py",
+      "sha256": "9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e"
+    },
+    {
+      "label": "collision experiment implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_experiment.py",
+      "sha256": "8500e264b8ec662c6e8187bc08407dbe3859c78b97cc66a516b56f9395e288b9"
+    },
+    {
+      "label": "collision CLI implementation",
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_cli.py",
+      "sha256": "1dda38c82fa50fb564122a7bd4bc8a4a9bac38c1f552d763f5c1f253779dcd17"
+    }
+  ],
+  "gmr": {
+    "change_count": 3,
+    "commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+    "damping": 0.5,
+    "dirty": true,
+    "internal_timestep_s": 0.002,
+    "repository_root": "/root/gpufree-data/GMR",
+    "solver": "daqp",
+    "upstream_use_velocity_limit": false
+  },
+  "implementation_sources": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_experiment.py",
+      "sha256": "8500e264b8ec662c6e8187bc08407dbe3859c78b97cc66a516b56f9395e288b9"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision.py",
+      "sha256": "04b08b58fb0782066645fbcf3574cb5155e8e17662b9f4129fda9a2d7fefeb40"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_model.py",
+      "sha256": "9c6415e5fe1ff9696cb180e694e303b4a96eefc98971c2fa229a6843508b975e"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_cli.py",
+      "sha256": "1dda38c82fa50fb564122a7bd4bc8a4a9bac38c1f552d763f5c1f253779dcd17"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_experiment.py",
+      "sha256": "bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746"
+    }
+  ],
+  "inputs": [
+    {
+      "contact_policy": "feet_only",
+      "diagnostic_csv": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_smoke_v1/diagnostics/walk1_subject1.csv",
+      "diagnostic_csv_sha256": "7e79d9a959866b8c4ac4d09eba5dbeaf46f4e92f47e36dbbc76dee497dc61c5f",
+      "max_active_collision_pair_count": 0,
+      "max_below_minimum_pair_count": 0,
+      "max_observed_joint_velocity_rad_s": 9.41535318280861,
+      "max_observed_trust_region_ratio": 1.0,
+      "max_penetrating_pair_count": 0,
+      "minimum_observed_audited_pair_distance_m": 0.02,
+      "motion_category": "standing_walking",
+      "motion_name": "walk1_subject1",
+      "output_frame_count": 120,
+      "output_pkl": "/root/gpufree-data/gmr_improved/outputs/collision_gmr_smoke_v1/retargeted/walk1_subject1.pkl",
+      "output_pkl_sha256": "1fb1f298819390a9f058496f74ad14f8674f1c38aa41bca2d327914328704d46",
+      "retarget_seconds": 0.5431948639452457,
+      "serialization_roundtrip_exact": true,
+      "source_bvh": "/root/gpufree-data/ubisoft-laforge-animation-dataset/lafan1/datasets/walk1_subject1.bvh",
+      "source_bvh_sha256": "4c9d591f323ffa660d9de6ef20c5d7077e66b2102a009feedf01afa22a6fbc73",
+      "source_fps": 30.000300003000028,
+      "source_frame_count": 7840,
+      "trust_region_bound_satisfied": true
+    }
+  ],
+  "intervention": {
+    "collision_gmr": {
+      "bound_relaxation": 0.0,
+      "broadphase": true,
+      "detection_distance_m": 0.02,
+      "enabled": true,
+      "expected_pair_count": 362,
+      "gain": 0.85,
+      "hand_patterns": [
+        "left_wrist",
+        "right_wrist",
+        "left_rubber_hand",
+        "right_rubber_hand"
+      ],
+      "minimum_distance_m": 0.005,
+      "minimum_tree_distance": 3
+    },
+    "temporal_gmr": {
+      "enabled": true,
+      "max_joint_velocity_rad_s": 9.41535318280861,
+      "output_fps": 30.0,
+      "previous_posture_cost": 1.0,
+      "soft_limit_cost": 10.0,
+      "soft_limit_margin_fraction": 0.03,
+      "soft_limit_min_margin_rad": 0.0,
+      "trust_region_tolerance_rad": 1e-07
+    }
+  },
+  "schema_version": 1
+}

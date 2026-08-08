@@ -1,0 +1,17 @@
+{
+  "case_id": "C12",
+  "case_type": "control",
+  "contact_policy": "feet_only",
+  "entities": "[]",
+  "event_duration_s": 0.03333333333333333,
+  "event_end_frame": 3667,
+  "event_start_frame": 3667,
+  "max_severity": 0.0,
+  "motion_category": "running_jumping",
+  "motion_name": "jumps1_subject5",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/jumps1_subject5.pkl",
+  "pose_frames": "[3637,3652,3667,3682,3697]",
+  "selection_rule": "preregistered low-hard-failure control motion at sequence midpoint",
+  "window_end_frame": 3697,
+  "window_start_frame": 3637
+}

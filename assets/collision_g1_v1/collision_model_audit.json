@@ -1,0 +1,73 @@
+{
+  "assigned_geom_name_count": 71,
+  "derived_xml": {
+    "path": "/root/gpufree-data/gmr_improved/assets/collision_g1_v1/g1_mocap_29dof_collision_named.xml",
+    "sha256": "02e330272c37cdec968cd468851aaa7b741501e80a943293081cfbc897eec7ff"
+  },
+  "model_equivalence": {
+    "derived_geom_name_count": 72,
+    "derived_unique_geom_name_count": 72,
+    "dimensions": {
+      "nbody": 39,
+      "ngeom": 72,
+      "njnt": 30,
+      "nmesh": 35,
+      "nq": 36,
+      "nsite": 2,
+      "nu": 29,
+      "nv": 35
+    },
+    "max_fk_abs_error": {
+      "geom_xmat": 0.0,
+      "geom_xpos": 0.0,
+      "site_xmat": 0.0,
+      "site_xpos": 0.0,
+      "xmat": 0.0,
+      "xpos": 0.0,
+      "xquat": 0.0
+    },
+    "mismatch_count": 0,
+    "mismatches": [],
+    "ok": true,
+    "sample_count": 16,
+    "seed": 20260806
+  },
+  "pair_audit": {
+    "active_at_neutral_count": 2,
+    "below_minimum_at_neutral_count": 0,
+    "candidate_geom_pair_count": 2556,
+    "exclusion_counts": {
+      "allowed_hand_contact": 883,
+      "contype_conaffinity_filter": 935,
+      "same_body": 62,
+      "tree_distance_below_minimum": 243,
+      "world_or_floor": 71
+    },
+    "included_body_pair_count": 193,
+    "included_geom_pair_count": 362,
+    "minimum_neutral_distance_m": 0.00781155910981925,
+    "mink_expanded_pair_count": 362,
+    "ok": true,
+    "parameters": {
+      "bound_relaxation": 0.0,
+      "broadphase": true,
+      "detection_distance_m": 0.02,
+      "fk_sample_count": 16,
+      "fk_seed": 20260806,
+      "gain": 0.85,
+      "hand_patterns": [
+        "left_wrist",
+        "right_wrist",
+        "left_rubber_hand",
+        "right_rubber_hand"
+      ],
+      "minimum_distance_m": 0.005,
+      "minimum_tree_distance": 3
+    }
+  },
+  "schema_version": 1,
+  "source_xml": {
+    "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+    "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "all_source_pairs_exact": true,
+  "analysis_version": "step3_failure_analysis_v1.1",
+  "checked_at": "2026-08-05T17:22:09.340013+08:00",
+  "frame_rate_recalculation_checks": {
+    "foot_slide": true,
+    "ground_penetration": true,
+    "joint_jump": true,
+    "near_limit_2pct": true,
+    "self_collision_nonhand": true,
+    "undesired_ground_contact": true,
+    "velocity_violation": true
+  },
+  "gmr_commit": "bb1bbe40774794fceb2a7c579a3464a28e68c844",
+  "gmr_worktree_status_at_analysis": [
+    "M general_motion_retargeting/utils/xsens_vendor/mujoco_xsens_bvh_view.py",
+    "?? human_skeleton.xml",
+    "?? offsets.json"
+  ],
+  "input_files": {
+    "catalog": {
+      "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv",
+      "sha256": "80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3"
+    },
+    "evaluator_config": {
+      "path": "/root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml",
+      "sha256": "f46e6939588939b79b5ba46514027f954eb37d9ddcd7cc3645712a8cd9d43882"
+    },
+    "gmr_core": {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py",
+      "sha256": "3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663"
+    },
+    "ik_config": {
+      "path": "/root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json",
+      "sha256": "cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320"
+    },
+    "quality_events": {
+      "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_events.csv",
+      "sha256": "8c87732a027da9b468040b073cbb84bca0c5f648068dcd791c5db7bac328b6fe"
+    },
+    "quality_summary": {
+      "path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_summary.csv",
+      "sha256": "07f6768fee7caf7de1d8dccbef8d14e501b521edebd84a12906641a9cc53eb89"
+    },
+    "robot_xml": {
+      "path": "/root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml",
+      "sha256": "85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8"
+    }
+  },
+  "motion_count": 15,
+  "quality_score_column_loaded_with_frozen_summary": true,
+  "quality_score_used_in_analysis": false,
+  "stratum_counts": {
+    "complex_dynamic": 3,
+    "dance": 3,
+    "floor_motion": 3,
+    "running_jumping": 3,
+    "standing_walking": 3
+  },
+  "total_frames": 90540
+}

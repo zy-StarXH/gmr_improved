@@ -1,0 +1,34 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "HELDOUT_RESULT.md",
+      "sha256": "b7d1c683647becc39b94f770b6803713b88ea1d88f47d14387cdece15958c370",
+      "size_bytes": 822
+    },
+    {
+      "path": "category_metrics.csv",
+      "sha256": "2a567e3b80529c08512c80b1c43361702402dd47e653976dc4612ef31670dcb9",
+      "size_bytes": 8779
+    },
+    {
+      "path": "comparison_summary.json",
+      "sha256": "1caac4b93befafce328284ea28859ebf376d4c3d173afd597c2dd753c009ad14",
+      "size_bytes": 5524
+    },
+    {
+      "path": "hard_fail_transitions.csv",
+      "sha256": "225f3a049a5230520910d710efd0a720a00da134d6a2cf388e51ffb488a98569",
+      "size_bytes": 28684
+    },
+    {
+      "path": "paired_motion_metrics.csv",
+      "sha256": "dd1aa951fa5756f7cfb49c5e3a4d6bdefdffe410b9f1f2645d75ba2df16da413",
+      "size_bytes": 21144
+    }
+  ],
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/heldout_compare.py",
+    "sha256": "17a413f713a26ebc77d663fccbb320836225b1bc0e73c69608105f9264345e98"
+  }
+}

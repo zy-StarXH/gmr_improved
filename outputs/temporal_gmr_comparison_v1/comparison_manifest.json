@@ -1,0 +1,24 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "TEMPORAL_GMR_DEVELOPMENT_REPORT.md",
+      "sha256": "a1f0a3d31e771d0f7151a5784e6d8122fff25da9414acd0bc61d58d281bc916a",
+      "size_bytes": 919
+    },
+    {
+      "path": "comparison_summary.json",
+      "sha256": "e60459916401a5890fb799762449f99bb710f8113067a8e7f7e36b0949aa7ca7",
+      "size_bytes": 5423
+    },
+    {
+      "path": "paired_motion_metrics.csv",
+      "sha256": "322d65c237885db7c64f16c2a74313d45057e9cec318e9a1f6cc6dab366061cd",
+      "size_bytes": 21416
+    }
+  ],
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/temporal_compare.py",
+    "sha256": "b5d0f4d2af31be4f948f9d8cf3a21c8e9f71d054bea1e0513e8ee085035cb80b"
+  }
+}

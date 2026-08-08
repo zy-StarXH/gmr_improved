@@ -1,0 +1,55 @@
+{
+  "base_integrity_audit": {
+    "comparison_manifest": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v2_comparison/comparison_manifest.json",
+    "comparison_manifest_sha256": "4dee19aa8bf21ecc6eca6dccaa9688d9b373a1f9cb82cb81b0bba7c0888e6277",
+    "comparison_output_count": 4,
+    "frame_count": 90540,
+    "generation_manifest": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v2/run_manifest.json",
+    "generation_manifest_sha256": "c91789a44ded9b9b673284d9dd4b821508336f37ae374c8fa97feea84eaabfee",
+    "max_trust_region_ratio": 1.0000000000000009,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "motion_count": 15,
+    "ok": true,
+    "quality_manifest": "/root/gpufree-data/gmr_improved/outputs/contact_gmr_development_v2_quality/run_manifest.json",
+    "quality_manifest_sha256": "ad01e35d4b260cb0bff0facb54c420c89462a20a089ca11c02d45266cf5c9e23",
+    "quality_output_count": 18,
+    "schema_version": 1
+  },
+  "contact_invariants": {
+    "failure_count": 0,
+    "failures": {},
+    "numerical_tolerance": 1e-09,
+    "ok": true,
+    "policy_statistics": {
+      "feet_only": {
+        "anchor_active_frame_count": 58636,
+        "frame_count": 75921,
+        "human_contact_frame_count": 58647,
+        "max_applied_root_lift_m": 0.05,
+        "max_left_anchor_error_m": 0.19501369318739525,
+        "max_post_ground_penetration_m": 0.16015226929181364,
+        "max_pre_ground_penetration_m": 0.21015226929181363,
+        "max_right_anchor_error_m": 0.19594473982797622,
+        "motion_count": 12,
+        "root_correction_frame_count": 2767,
+        "root_lift_clipped_frame_count": 855
+      },
+      "floor_motion": {
+        "anchor_active_frame_count": 0,
+        "frame_count": 14619,
+        "human_contact_frame_count": 0,
+        "max_applied_root_lift_m": 0.0,
+        "max_left_anchor_error_m": 0.0,
+        "max_post_ground_penetration_m": 0.21540301575817702,
+        "max_pre_ground_penetration_m": 0.21540301575817702,
+        "max_right_anchor_error_m": 0.0,
+        "motion_count": 3,
+        "root_correction_frame_count": 0,
+        "root_lift_clipped_frame_count": 0
+      }
+    }
+  },
+  "ok": true,
+  "schema_version": 1
+}

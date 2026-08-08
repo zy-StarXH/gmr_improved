@@ -1,0 +1,47 @@
+schema_version: 1
+
+paths:
+  gmr_root: /root/gpufree-data/GMR
+  gmr_motion_retarget: /root/gpufree-data/GMR/general_motion_retargeting/motion_retarget.py
+  gmr_lafan1_loader: /root/gpufree-data/GMR/general_motion_retargeting/utils/lafan1.py
+  gmr_ik_config: /root/gpufree-data/GMR/general_motion_retargeting/ik_configs/bvh_lafan1_to_g1.json
+  robot_xml: /root/gpufree-data/GMR/assets/unitree_g1/g1_mocap_29dof.xml
+  development_catalog: /root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/step10_motion_catalog.csv
+  quality_config: /root/gpufree-data/retargeting_quality_assessment/configs/unitree_g1_v1.yaml
+  baseline_quality_summary: /root/gpufree-data/retargeting_quality_assessment/outputs/step10_offline_experiment/evaluation/quality_summary.csv
+
+frozen_inputs:
+  gmr_commit: bb1bbe40774794fceb2a7c579a3464a28e68c844
+  gmr_motion_retarget_sha256: 3a4f9fb0d13b204c8dcbb2ab62db59bce9de81b1f5911167aa73f079e0c90663
+  gmr_lafan1_loader_sha256: 3f07179414a54f8821cbdb52307f987228e7955d27f95aee0e3941b1d5ec2f4c
+  gmr_ik_config_sha256: cb4ef4bc38bf8c59aabddd4baeb261fb5d23e8628ac3793fc06a9ebf699aa320
+  robot_xml_sha256: 85a25128d42ad3cc8dd071c089806a2773a59ee0689edcc646aeb0201ae8f4c8
+  development_catalog_sha256: 80602fe41991d63a044f34a86984bda2cd4c60ef17266120fa48e89f271c5eb3
+  motion_count: 15
+  total_frames: 90540
+
+gmr:
+  solver: daqp
+  damping: 0.5
+
+temporal_gmr:
+  output_fps: 30.0
+  # 0.999 * the frozen evaluator threshold 3*pi. The 0.1% numerical guard is
+  # fixed after v1 showed only 1.78e-15--7.11e-15 rad/s apparent excess.
+  max_joint_velocity_rad_s: 9.41535318280861
+  previous_posture_cost: 1.0
+  soft_limit_cost: 10.0
+  soft_limit_margin_fraction: 0.03
+  soft_limit_min_margin_rad: 0.0
+  trust_region_tolerance_rad: 0.0000001
+  enabled: true
+
+acceptance:
+  primary_metrics:
+    - joint_jump_rate
+    - velocity_violation_frame_rate
+    - near_limit_2pct_frame_rate
+  no_new_hard_fail: true
+  maximum_overall_fidelity_pass_rate_decline: 0.02
+  ignore_uncalibrated_quality_score: true
+

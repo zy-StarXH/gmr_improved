@@ -1,0 +1,88 @@
+{
+  "analysis_version": "step3_failure_analysis_v1.1",
+  "cohort": {
+    "frame_count": 90540,
+    "motion_count": 15,
+    "stratum_counts": {
+      "complex_dynamic": 3,
+      "dance": 3,
+      "floor_motion": 3,
+      "running_jumping": 3,
+      "standing_walking": 3
+    }
+  },
+  "confirmed_code_facts": {
+    "collision_limit_present_in_gmr": false,
+    "configuration_limit_enabled": true,
+    "cross_frame_smoothing_objective_present_in_gmr": false,
+    "frozen_generation_velocity_limit_enabled": false,
+    "per_frame_solver_allows_repeated_integrations": true
+  },
+  "frame_level": {
+    "foot_slide": {
+      "affected_motion_count": 15,
+      "flagged_frame_count": 2679,
+      "median_motion_rate": 0.022448678186383103,
+      "pooled_frame_rate": 0.029589131875414183
+    },
+    "ground_penetration": {
+      "affected_motion_count": 14,
+      "flagged_frame_count": 9497,
+      "median_motion_rate": 0.032639196573622804,
+      "pooled_frame_rate": 0.10489286503203005
+    },
+    "joint_jump": {
+      "affected_motion_count": 15,
+      "flagged_frame_count": 1980,
+      "median_motion_rate": 0.006056129985228951,
+      "pooled_frame_rate": 0.02187241093620547
+    },
+    "near_limit_2pct": {
+      "affected_motion_count": 15,
+      "flagged_frame_count": 49426,
+      "median_motion_rate": 0.5640917996081724,
+      "pooled_frame_rate": 0.5459023635962006
+    },
+    "self_collision_nonhand": {
+      "affected_motion_count": 14,
+      "flagged_frame_count": 2190,
+      "median_motion_rate": 0.014955640050697085,
+      "pooled_frame_rate": 0.024188204108681246
+    },
+    "severe_ground_penetration": {
+      "affected_motion_count": 8,
+      "flagged_frame_count": 3555,
+      "median_motion_rate": 0.0019199527396248708,
+      "pooled_frame_rate": 0.03926441351888668
+    },
+    "undesired_ground_contact": {
+      "affected_motion_count": 10,
+      "flagged_frame_count": 8290,
+      "median_motion_rate": 0.002067641411903707,
+      "pooled_frame_rate": 0.09156174066710845
+    },
+    "velocity_violation": {
+      "affected_motion_count": 15,
+      "flagged_frame_count": 8783,
+      "median_motion_rate": 0.05553914327917282,
+      "pooled_frame_rate": 0.09702292184479426
+    }
+  },
+  "hard_fail_affected_motion_counts": {
+    "SEVERE_PENETRATION": 8,
+    "SUSTAINED_SELF_COLLISION": 11,
+    "UNDESIRED_GROUND_CONTACT": 7
+  },
+  "interpretation": {
+    "joint_jump_given_velocity_violation_note": "Conditional relationships are descriptive, not causal.",
+    "quality_score_used": false,
+    "static_fk_proves_dynamic_feasibility": false
+  },
+  "research_boundary": {
+    "inferential_use_allowed": false,
+    "score_is_calibrated": false,
+    "static_fk_proves_dynamics": false,
+    "use_quality_score": false
+  },
+  "selected_case_count": 12
+}

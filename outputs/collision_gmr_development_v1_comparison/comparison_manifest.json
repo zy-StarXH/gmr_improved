@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "COLLISION_GMR_DEVELOPMENT_REPORT.md",
+      "sha256": "802990d774801c2422de960b63cc1b6a2535c9794e26d8552179f850ddc817e1",
+      "size_bytes": 976
+    },
+    {
+      "path": "category_metrics.csv",
+      "sha256": "8cea2a5826ae8ef61d920eab84281d8e42348b3ae8d5b24f438eb810534ee48b",
+      "size_bytes": 15687
+    },
+    {
+      "path": "comparison_summary.json",
+      "sha256": "ddbf3b0e0616de91d5d48ab5fed82bad8d90ace15bdc535316987b429cc3ec22",
+      "size_bytes": 6718
+    },
+    {
+      "path": "paired_motion_metrics.csv",
+      "sha256": "0ea6fc9e63779b19aef1f4e3286c0e3e08b925d11d17f95cb6f7529ede0c3eb8",
+      "size_bytes": 23274
+    }
+  ],
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_compare.py",
+    "sha256": "c18488f667c4e1ae94400ff86b47854e564f23144a160d54716c752dec0f2127"
+  }
+}

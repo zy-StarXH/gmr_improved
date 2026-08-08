@@ -1,0 +1,17 @@
+{
+  "case_id": "C07",
+  "case_type": "ground_penetration",
+  "contact_policy": "feet_only",
+  "entities": "[\"left_ankle_roll_link\",\"right_ankle_roll_link\",\"right_hip_yaw_link\",\"right_knee_link\"]",
+  "event_duration_s": 2.1,
+  "event_end_frame": 1106,
+  "event_start_frame": 1044,
+  "max_severity": 0.1793972129194622,
+  "motion_category": "complex_dynamic",
+  "motion_name": "multipleActions1_subject4",
+  "pkl_path": "/root/gpufree-data/retargeting_quality_assessment/outputs/step10_dataset/retargeted/multipleActions1_subject4.pkl",
+  "pose_frames": "[1014,1044,1075,1106,1136]",
+  "selection_rule": "maximum severity, then duration; distinct motion within type",
+  "window_end_frame": 1136,
+  "window_start_frame": 1014
+}

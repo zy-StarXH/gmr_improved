@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "implementation": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/heldout_visualization_v3.py",
+      "sha256": "fb08f21c2190906e2db2074dd753eb6c8e9d623a1264a79877bdfde4f2c42d83"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/heldout_visualization.py",
+      "sha256": "b9d41dadcedc40263aa76b7669f88a3ab90a503e67e89ef0887fd4195add7853"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_comparison_v1/comparison_summary.json",
+      "sha256": "1caac4b93befafce328284ea28859ebf376d4c3d173afd597c2dd753c009ad14"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_comparison_v1/paired_motion_metrics.csv",
+      "sha256": "dd1aa951fa5756f7cfb49c5e3a4d6bdefdffe410b9f1f2645d75ba2df16da413"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_comparison_v1/category_metrics.csv",
+      "sha256": "2a567e3b80529c08512c80b1c43361702402dd47e653976dc4612ef31670dcb9"
+    },
+    {
+      "path": "/root/gpufree-data/gmr_improved/data/temporal_gmr_heldout_core_audit.json",
+      "sha256": "062f984c2899987cc9ac580cb55b92336c0852a0ce86bde8c58cf4dc814693a8"
+    }
+  ],
+  "layout_version": 3,
+  "outputs": [
+    {
+      "path": "01_test_completion_dashboard.png",
+      "sha256": "5fcd6180895f3175ebd79949f039fe178e813f9aa37b14cf1e04acf11df77f7b",
+      "size_bytes": 210388
+    },
+    {
+      "path": "02_overall_metrics_a0_a1.png",
+      "sha256": "8742b5513107ea827497c09075aefdd8dc446789e2b41fcf60aa15f77dfde405",
+      "size_bytes": 147950
+    },
+    {
+      "path": "03_category_improvement_heatmap.png",
+      "sha256": "c39768a6de1c2e8f5f941997cd431612dd7603b64743a1c3891179518c087392",
+      "size_bytes": 111694
+    },
+    {
+      "path": "04_motion_tradeoff.png",
+      "sha256": "c61e49a93346387842dee2f1419c2b103dd8409cbd1d321648e8c3e66dce428f",
+      "size_bytes": 213348
+    },
+    {
+      "path": "05_dance1_subject2_timeline.png",
+      "sha256": "66d189ea2d8ab47246a8ca7ce70f35cae3b837aeb98a312030bf73ac5a2a0074",
+      "size_bytes": 780723
+    },
+    {
+      "path": "VISUALIZATION_GUIDE.md",
+      "sha256": "ff2bfa6e3a786b38a8ed6972015e9ccb3ff7f453965e3a5f8776422ee7eb6428",
+      "size_bytes": 1204
+    },
+    {
+      "path": "index.html",
+      "sha256": "f962d2415df0edc5304b970c57aa8fd23d82f4f966d7bd14cea8d7ddce3361e4",
+      "size_bytes": 1148
+    }
+  ]
+}

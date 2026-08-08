@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "files": [
+    {
+      "path": "event_coverage_audit.json",
+      "sha256": "82f46fa631bee0dd0654194c52e070d179fbeb279ef04369a2089118b78fc3fe",
+      "size_bytes": 2151
+    },
+    {
+      "path": "pair_event_counts.csv",
+      "sha256": "f7f9666ebeb88ff1885932660eddf33cf6318c8ae8e782009a00b59a4433c89c",
+      "size_bytes": 2206
+    }
+  ],
+  "implementation": {
+    "path": "/root/gpufree-data/gmr_improved/src/gmr_improved/collision_event_audit.py",
+    "sha256": "134dfd47f180bc4cd006154fecea6e88984a15a3cf10c23c02f1320d78886ea8"
+  }
+}

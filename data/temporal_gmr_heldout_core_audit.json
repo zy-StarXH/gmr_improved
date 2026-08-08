@@ -1,0 +1,94 @@
+{
+  "comparison": {
+    "heldout_gate_pass": true,
+    "new_hard_fail_motions": [],
+    "output_count": 5,
+    "uncalibrated_quality_score_used": false
+  },
+  "generation": {
+    "a0": {
+      "frame_count": 91627,
+      "max_observed_joint_velocity_rad_s": null,
+      "max_observed_trust_region_ratio": null,
+      "motion_count": 15,
+      "motion_names": [
+        "dance1_subject2",
+        "dance1_subject3",
+        "dance2_subject4",
+        "fallAndGetUp1_subject5",
+        "fight1_subject2",
+        "ground1_subject4",
+        "jumps1_subject1",
+        "multipleActions1_subject2",
+        "obstacles1_subject2",
+        "pushAndFall1_subject1",
+        "run1_subject5",
+        "run2_subject1",
+        "walk1_subject2",
+        "walk1_subject5",
+        "walk3_subject3"
+      ]
+    },
+    "a1": {
+      "frame_count": 91627,
+      "max_observed_joint_velocity_rad_s": 9.415353182808618,
+      "max_observed_trust_region_ratio": 1.0000000000000007,
+      "motion_count": 15,
+      "motion_names": [
+        "dance1_subject2",
+        "dance1_subject3",
+        "dance2_subject4",
+        "fallAndGetUp1_subject5",
+        "fight1_subject2",
+        "ground1_subject4",
+        "jumps1_subject1",
+        "multipleActions1_subject2",
+        "obstacles1_subject2",
+        "pushAndFall1_subject1",
+        "run1_subject5",
+        "run2_subject1",
+        "walk1_subject2",
+        "walk1_subject5",
+        "walk3_subject3"
+      ]
+    }
+  },
+  "manifest_inputs": {
+    "a0_generation": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a0_v1/run_manifest.json",
+      "sha256": "88c802ac8d9ee02eff66602eb548286e52c9c507e6ef21807c6e4fef2ff7e9cc"
+    },
+    "a0_quality": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a0_quality_v1/run_manifest.json",
+      "sha256": "13844b19277a5cadbc07cc2b2f46256bbeea95b196a2c257b7508e7207bcf0b9"
+    },
+    "a1_generation": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_v1/run_manifest.json",
+      "sha256": "0d50848bcb9ee3127beaed9702a4fdb7bbc3d4bcc1b5df898b213d42deb46565"
+    },
+    "a1_quality": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_a1_quality_v1/run_manifest.json",
+      "sha256": "1e1819ebe127c3bf47733ac010b7158ca90b17628cd3ca49866175ef49227e69"
+    },
+    "comparison": {
+      "path": "/root/gpufree-data/gmr_improved/outputs/temporal_gmr_heldout_comparison_v1/comparison_manifest.json",
+      "sha256": "a6c8f334221bdb82f0ddd06a5be339698fccaf13ff8abf46dd48b8c94f029313"
+    }
+  },
+  "mismatch_count": 0,
+  "mismatches": [],
+  "ok": true,
+  "quality": {
+    "a0": {
+      "fidelity_verified_count": 15,
+      "hard_fail_count": 12,
+      "output_count": 18
+    },
+    "a1": {
+      "fidelity_verified_count": 15,
+      "hard_fail_count": 12,
+      "output_count": 18
+    }
+  },
+  "schema_version": 1
+}

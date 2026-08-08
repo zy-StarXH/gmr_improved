@@ -1,0 +1,163 @@
+{
+  "artifact_count": 28,
+  "artifacts": [
+    {
+      "path": "README.md",
+      "sha256": "c0aa3bdc2ac60f8904b93a04560fd87c9fd93bf2840deb4dcb0c4e0a34efaccf",
+      "size_bytes": 1947
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "a7730310221e8b7e97bf014ab1edbb08da012bc71a26f648a9da9580ae611262",
+      "size_bytes": 1269
+    },
+    {
+      "path": "configs/temporal_gmr_v2.yaml",
+      "sha256": "4a58ce6a8ea3ad1b4f8e499771bd0a82a4f209e77588e4f9c37aa3e361c17eb5",
+      "size_bytes": 2026
+    },
+    {
+      "path": "configs/temporal_gmr_heldout_v1.yaml",
+      "sha256": "01546d5a9663135d0ba299805adb09aabcdfd3fe386515412b9568cf5c3c436e",
+      "size_bytes": 2374
+    },
+    {
+      "path": "data/temporal_gmr_heldout_sources.csv",
+      "sha256": "35e5523c9f798a90745cbb6c92daa2785793f2a630a9775aef87bdd6f4900b03",
+      "size_bytes": 3764
+    },
+    {
+      "path": "data/temporal_gmr_heldout_core_audit.json",
+      "sha256": "062f984c2899987cc9ac580cb55b92336c0852a0ce86bde8c58cf4dc814693a8",
+      "size_bytes": 2902
+    },
+    {
+      "path": "reports/TEMPORAL_GMR_REPORT.md",
+      "sha256": "41486bc58c6a35654cfae7a0ab6d4ab84981b61a8eda87049fe0514f5f180a2c",
+      "size_bytes": 7616
+    },
+    {
+      "path": "reports/TEMPORAL_GMR_I0_FINAL_REPORT.md",
+      "sha256": "170428511924f63af144ce2fb88348d2a0e1feee96c5ffb84236140c398863f3",
+      "size_bytes": 9695
+    },
+    {
+      "path": "src/gmr_improved/temporal.py",
+      "sha256": "c00b37167acc0cf5679a52bbc24c354874a63e5d43560ba986f5109c0ae148a0",
+      "size_bytes": 17240
+    },
+    {
+      "path": "src/gmr_improved/temporal_experiment.py",
+      "sha256": "bdb5aa9b6086daa18741616aa9162aa9e3b84e108b467372f2b4f588598ae746",
+      "size_bytes": 15620
+    },
+    {
+      "path": "src/gmr_improved/heldout_experiment.py",
+      "sha256": "12d9a96d80db9e6c3b5dcd4cd9b362a153dbeaa7fa3321c982def7463839365d",
+      "size_bytes": 15927
+    },
+    {
+      "path": "src/gmr_improved/heldout_compare.py",
+      "sha256": "17a413f713a26ebc77d663fccbb320836225b1bc0e73c69608105f9264345e98",
+      "size_bytes": 13087
+    },
+    {
+      "path": "src/gmr_improved/heldout_audit.py",
+      "sha256": "4b50d9af3bee47fb9a133572e3d43523aaccf785c5427826e0b29ef2a7a99005",
+      "size_bytes": 9818
+    },
+    {
+      "path": "src/gmr_improved/heldout_visualization.py",
+      "sha256": "b9d41dadcedc40263aa76b7669f88a3ab90a503e67e89ef0887fd4195add7853",
+      "size_bytes": 17629
+    },
+    {
+      "path": "src/gmr_improved/heldout_visualization_v2.py",
+      "sha256": "56237512e2a492ef63f3d5a98b4b2de6c1c9fdfe5e12d607f3fc336362bd2ef4",
+      "size_bytes": 9553
+    },
+    {
+      "path": "src/gmr_improved/heldout_visualization_v3.py",
+      "sha256": "fb08f21c2190906e2db2074dd753eb6c8e9d623a1264a79877bdfde4f2c42d83",
+      "size_bytes": 9817
+    },
+    {
+      "path": "src/gmr_improved/i0_delivery.py",
+      "sha256": "69cbb9c1b5979129ec293e47c86e265539bbc152c0bb907cc2611b9f5fa56e2e",
+      "size_bytes": 8448
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_a0_v1/run_manifest.json",
+      "sha256": "88c802ac8d9ee02eff66602eb548286e52c9c507e6ef21807c6e4fef2ff7e9cc",
+      "size_bytes": 15598
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_a1_v1/run_manifest.json",
+      "sha256": "0d50848bcb9ee3127beaed9702a4fdb7bbc3d4bcc1b5df898b213d42deb46565",
+      "size_bytes": 19876
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_a0_quality_v1/run_manifest.json",
+      "sha256": "13844b19277a5cadbc07cc2b2f46256bbeea95b196a2c257b7508e7207bcf0b9",
+      "size_bytes": 44840
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_a1_quality_v1/run_manifest.json",
+      "sha256": "1e1819ebe127c3bf47733ac010b7158ca90b17628cd3ca49866175ef49227e69",
+      "size_bytes": 46280
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_comparison_v1/comparison_manifest.json",
+      "sha256": "a6c8f334221bdb82f0ddd06a5be339698fccaf13ff8abf46dd48b8c94f029313",
+      "size_bytes": 1042
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_comparison_v1/comparison_summary.json",
+      "sha256": "1caac4b93befafce328284ea28859ebf376d4c3d173afd597c2dd753c009ad14",
+      "size_bytes": 5524
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_comparison_v1/paired_motion_metrics.csv",
+      "sha256": "dd1aa951fa5756f7cfb49c5e3a4d6bdefdffe410b9f1f2645d75ba2df16da413",
+      "size_bytes": 21144
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_comparison_v1/category_metrics.csv",
+      "sha256": "2a567e3b80529c08512c80b1c43361702402dd47e653976dc4612ef31670dcb9",
+      "size_bytes": 8779
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_visualization_v3/visualization_manifest.json",
+      "sha256": "e3cb8a3c0b352e73ee75a725559072877e8d6eeadb5df14dbaa68c3067a36eab",
+      "size_bytes": 2478
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_visualization_v3/index.html",
+      "sha256": "f962d2415df0edc5304b970c57aa8fd23d82f4f966d7bd14cea8d7ddce3361e4",
+      "size_bytes": 1148
+    },
+    {
+      "path": "outputs/temporal_gmr_heldout_visualization_v3/VISUALIZATION_GUIDE.md",
+      "sha256": "ff2bfa6e3a786b38a8ed6972015e9ccb3ff7f453965e3a5f8776422ee7eb6428",
+      "size_bytes": 1204
+    }
+  ],
+  "created_at_utc": "2026-08-05T14:13:10.317849+00:00",
+  "notes": [
+    "PLAN.md is intentionally excluded because it records this manifest hash after creation.",
+    "The final audit file is intentionally excluded to avoid self-reference."
+  ],
+  "schema_version": 1,
+  "stage": "I0_Temporal_GMR",
+  "status": "completed",
+  "validation": {
+    "frame_count": 91627,
+    "heldout_gate_pass": true,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "motion_count": 15,
+    "ok": true,
+    "uncalibrated_quality_score_used": false,
+    "visualization_layout_version": 3
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-05T17:25:00+08:00",
+  "stage": "step3_gmr_failure_analysis",
+  "complete": true,
+  "analysis_manifest": {
+    "path": "outputs/baseline_failure_analysis_v2/run_manifest.json",
+    "sha256": "4206a1d2a9b739919470ace498892ed68a6128837dbe63165f65a5a8339613dc",
+    "nested_output_file_count": 48,
+    "nested_analysis_source_file_count": 3
+  },
+  "files": [
+    {"path": "PLAN.md", "size_bytes": 12546, "sha256": "c29541458cf55ef340390d707576d0628fb1aa452085ef0dd1db255b5fd9bfb0"},
+    {"path": "README.md", "size_bytes": 884, "sha256": "1ab2a23c1e4b14949d0b1d0edf8814be3073da3e9146afa07e7d8ba11efdbeb5"},
+    {"path": "pyproject.toml", "size_bytes": 576, "sha256": "bd3341c7e0278df9e4856758e4ecb8b8fec30e78b134f2d2ce3016f5cd8daaa3"},
+    {"path": "configs/baseline_analysis.yaml", "size_bytes": 3772, "sha256": "f16a43a584f78431c167ba1428be438c633ea986085b3f1b9e19464778551d9e"},
+    {"path": "src/gmr_improved/__init__.py", "size_bytes": 92, "sha256": "4dfa25d02c3f7bedf15c08b11bdc4caee222f3c5dc3c9d53531cfcac49a0f51b"},
+    {"path": "src/gmr_improved/__main__.py", "size_bytes": 81, "sha256": "2cdd23d4f5cd6c3b3e4cb690ad16d560637767b9ca5b2a3cf129fcc0a5ebc82b"},
+    {"path": "src/gmr_improved/analysis.py", "size_bytes": 37987, "sha256": "852ed9b54144f5fc9a07a8ff9fa90dc103f8c9753233092bb945517011c43839"},
+    {"path": "src/gmr_improved/cli.py", "size_bytes": 2382, "sha256": "21d2a97a3e4a6de2de3e90e043f52b05958bb57cfef31a5d340d2293f46a1b54"},
+    {"path": "tests/test_analysis.py", "size_bytes": 4304, "sha256": "96cfe24b3181aac0c505860967ef892833414550fda2d9f6a97436c71ad222fd"},
+    {"path": "data/visual_review_protocol.md", "size_bytes": 1704, "sha256": "3c092339ef8d13dfec9c1d97288d942e97b00bb8df5ab50f82cc48caaaa0c052"},
+    {"path": "data/visual_review.yaml", "size_bytes": 4897, "sha256": "76300caddcd477eacc96e7dd2c521114cd50407ae831a277b3f5eda5c6307a46"},
+    {"path": "data/joint_jump_case_details.csv", "size_bytes": 814, "sha256": "52a940fa5f1110c53e23569385de09cc88b144c81ecc9b331b79bfd460eefa70"},
+    {"path": "data/root_cause_evidence.yaml", "size_bytes": 2707, "sha256": "4a2406bd6545d3bdfd226dc0b3a296770eba00a4f817ad6849586ca0e7ee36db"},
+    {"path": "data/v1_v2_equivalence.json", "size_bytes": 1303, "sha256": "325c7d0188cd3bcc31285106cfc18c2cc7ffb6f895cea5e593c1e556f72f67ee"},
+    {"path": "reports/GMR_FAILURE_ANALYSIS.md", "size_bytes": 13512, "sha256": "22326b495ed9c1bab060e50fb7c2ea119ce69cfa069711533bfc34e7a8044b1a"},
+    {"path": "reports/FAILURE_CASE_CATALOG_v2.csv", "size_bytes": 8837, "sha256": "51c56601183bf46841eab15593e053113d3dbaf80a53d8048bb59d1f48431031"},
+    {"path": "outputs/baseline_failure_analysis_v2/run_manifest.json", "size_bytes": 12159, "sha256": "4206a1d2a9b739919470ace498892ed68a6128837dbe63165f65a5a8339613dc"}
+  ]
+}
